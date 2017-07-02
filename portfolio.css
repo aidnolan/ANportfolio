@@ -41,11 +41,13 @@ nav.navbar {
       background-color: #f2d8d2;
       height: 100%;
       padding-bottom: 50px; }
-      .container.box#subbox .col-xs-2 {
+      .container.box#subbox h2 {
+        height: 10%; }
+      .container.box#subbox .col-xs-6 {
         margin-bottom: 10px; }
     .container.box#projectbox {
       background-image: url("http://blog.websiddu.com/images/covers/sublime.jpg"); }
-      .container.box#projectbox .col-xs-4 {
+      .container.box#projectbox .col-sm-4 {
         width: 29%;
         color: black;
         height: 300px;
