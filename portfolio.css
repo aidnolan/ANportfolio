@@ -7,13 +7,12 @@ nav.navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #f2d8d2;
+  background-color: #def9e0;
   z-index: 500; }
 
 .container {
   font-family: "Raleway"; }
   .container.box {
-    height: 700px;
     width: 100%;
     position: relative;
     background-attachment: fixed;
@@ -21,34 +20,37 @@ nav.navbar {
     background-repeat: no-repeat;
     background-size: cover; }
     .container.box#titlebox {
-      height: 300px;
       background-image: url("https://www.laptopmag.com/images/wp/purch-api/incontent/2017/03/apple-macbook-air-13inch-ports.jpg");
       background-size: cover;
+      padding-bottom: 20px;
       margin-top: 50px; }
     .container.box#introbox {
-      height: 500px;
       color: black;
       font-size: 2em;
       font-size: 20px; }
-      .container.box#introbox .col-xs-12 img {
+      .container.box#introbox img {
         width: 100%;
         border-radius: 5%;
         border: 1px solid blue; }
-    .container.box#subbox {
-      background-color: #f2d8d2;
-      height: 100%;
+      .container.box#introbox .col-xs-12:first-of-type {
+        margin-bottom: 20px; }
+      .container.box#introbox .row {
+        margin: 20px 20px; }
+    .container.box#skillbox {
+      background-color: #def9e0;
       padding-bottom: 50px;
       margin-bottom: 0; }
-      .container.box#subbox h2 {
-        height: 10%; }
-      .container.box#subbox .col-xs-4 {
+      .container.box#skillbox .row:first-of-type {
+        margin-bottom: 10px; }
+      .container.box#skillbox .col-xs-4 {
         margin-bottom: 20px; }
     .container.box#projectbox {
       background-image: url("http://blog.websiddu.com/images/covers/sublime.jpg"); }
       .container.box#projectbox .row:first-of-type {
         margin-top: 20px; }
       .container.box#projectbox .thumbnail {
-        height: 300px;
         background-color: rgba(200, 255, 255, 0.7); }
+        .container.box#projectbox .thumbnail img {
+          padding: 50px; }
 
 /*# sourceMappingURL=portfolio.css.map */
