@@ -1,168 +1,283 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>A. Nolan Portfolio</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
-		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+		<title>A. Nolan Portfolio</title>
 </head>
 <body>
-<nav class="navbar navbar-default">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-	      	</button>
-			<a href="#" class="navbar-brand">Mr Aidan Nolan</a>
+	<nav class="navbar navbar-default">
+		<div id="nav-adjust" class="container">
+			<div class="navbar-header ">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+		      	</button>
+				<a href="#" class="navbar-brand"><i class="fa fa-home" aria-hidden="true"></i></a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo">
+				<ul class="nav navbar-nav">
+					<li><a href="#aboutMe">Intro</a></li>
+					<li><a href="#skillbox">Skills</a></li>
+					<li><a href="#projectbox">Projects</a></li>	
+					<li><a href="#">Career</a></li>		
+					<li><a class="end-nav" href="#formbox">Contact</a></li>		
+				</ul>
+			</div>
 		</div>
-		<div class="collapse navbar-collapse" id="bs-nav-demo">
-			<ul class="nav navbar-nav">
-				<li><a href="#">About</a></li>
-				<li><a href="#">Skills</a></li>
-				<li><a href="#">Projects</a></li>		
+	</nav>
+	
+	<div id="titlebox" class="container text-center box page-header">
+		<div class="row">
+			<h1>Aidan Nolan</h1>
+			<h1>Junior Web Developer</h1>
+		</div>
+	</div>
+	<div id="aboutMe">
+	</div>
+	<div id="introbox" class="container text-center box">
+		<div class="row">
+			About Me
+		</div>
+		<div class="clearfix"></div>
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
+				My name is Aidan Nolan and I am a self-taught web developer. I've been studying web development for just over 6 months and I have 
+			</div>
 
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">Sign Up</a></li>		
-				<li><a href="#skillboxlink">Login</a></li>		
-			</ul>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
+				<img class="img-circle" src="profpic.jpg">
+			</div>
 		</div>
 	</div>
-</nav>
-<div id="titlebox" class="container text-center box">
-	<div class="row">
-		<h1>Aidan Nolan</h1>
-		<h1>Junior Web Developer</h1>
-	</div>
-</div>
-<div id="introbox" class="container text-center box">
-	<div class="row">
-		<!-- <div class="col-xs-12"></div> -->
-	</div>
-	<div class="row">
-		<div class="col-sm-6 col-xs-12">
-			My name is Aidan Nolan and I am a self-taught web developer. I've been studying web development for just over 6 months and I have 
+	<div id="skillbox" class="container box text-center">
+		<div class="row">
+			<div class="col-sm-12 col-xs-12"><h2>Skills</h2></div>
 		</div>
-
-		<div class="col-sm-6 col-xs-12">
-			<img src="https://photos-5.dropbox.com/t/2/AADeEFmSd5lXSkjsfR6xpRDAfzprElhIFtn2-vIcwYa0fA/12/705882244/jpeg/32x32/1/_/1/2/2017-09-25_17-13-10_654.jpeg/EL7DqekFGAMgBygH/eZ5YxFg8xv2i1n9xIoQB4Eq0dL3Ik8USxpOC8-LDHgM?size=32x32&size_mode=5">
-		</div>
-	</div>
-</div>
-<div id="skillbox" class="container box text-center">
-	<div class="row">
-		<div class="col-sm-12 col-xs-12"><h2><a id="skillboxlink">Skills</a></h2></div>
-	</div>
-	<div class="row">
-		<div class="col-sm-2 col-xs-4">
-			<i class="devicon-html5-plain-wordmark" title="HTML5"></i>
-		</div>	
-		<div class="col-sm-2 col-xs-4">
-			<i class="devicon-css3-plain-wordmark" title="CSS3"></i>
-		</div>
-		<div class="col-sm-2 col-xs-4">
-			<i class="devicon-javascript-plain" title="JavaScript"></i>
-		</div>
-		<div class="col-sm-2 col-xs-4">
-			<i class="devicon-bootstrap-plain colored" title="Bootstrap"></i>
-		</div>
-		
-		<div class="col-sm-2 col-xs-4">
-			<i class="devicon-jquery-plain-wordmark" title="jQuery"></i>
+		<div class="row">
+			<div class="col-sm-2 col-xs-4">
+				<i class="devicon-html5-plain-wordmark" title="HTML5"></i>
+			</div>	
+			<div class="col-sm-2 col-xs-4">
+				<i class="devicon-css3-plain-wordmark" title="CSS3"></i>
+			</div>
+			<div class="col-sm-2 col-xs-4">
+				<i class="devicon-javascript-plain" title="JavaScript"></i>
+			</div>
+			<div class="col-sm-2 col-xs-4">
+				<i class="devicon-bootstrap-plain" title="Bootstrap"></i>
+			</div>
 			
+			<div class="col-sm-2 col-xs-4">
+				<i class="devicon-jquery-plain-wordmark" title="jQuery"></i>
+				
+			</div>
+			<div class="col-sm-2 col-xs-4">
+				<i class="devicon-sass-original" title="Sass"></i>
+			</div>	
 		</div>
-		<div class="col-sm-2 col-xs-4">
-			<i class="devicon-sass-original" title="Sass"></i>
-		</div>	
-	</div>
-	<div class="row">
-		<div class="col-sm-2 col-xs-4">
-			<i class="devicon-nodejs-plain-wordmark" title="Node.js"></i>
+		<div class="row">
+			<div class="col-sm-2 col-xs-4">
+				<i class="devicon-nodejs-plain-wordmark" title="Node.js"></i>
+			</div>
+			<div class="col-sm-2 col-xs-4">
+				<i class="devicon-express-original" title="Express.js"></i>
+			</div>	
+			<div class="col-sm-2 col-xs-4">
+				<i class="devicon-git-plain-wordmark" title="Git"></i>
+			</div>
+			<div class="col-sm-2 col-xs-4">
+				<i class="devicon-github-plain-wordmark" title="Github"></i>
+			</div>
+			<div class="col-sm-2 col-xs-4">
+				<i class="devicon-heroku-original-wordmark" title="Heroku"></i>
+			</div>
+			<div class="col-sm-2 col-xs-4">
+				<i class="devicon-mongodb-plain-wordmark" title="MongoDB"></i>
+			</div>
 		</div>
-		<div class="col-sm-2 col-xs-4">
-			<i class="devicon-express-original" title="Express.js"></i>
-		</div>	
-		<div class="col-sm-2 col-xs-4">
-			<i class="devicon-git-plain-wordmark" title="Git"></i>
+		<div class="row">
+			<div class="col-sm-offset-2 col-sm-2 col-xs-4">
+				<i class="devicon-python-plain-wordmark" title="Python"></i>
+			</div>	
+			<div class="col-sm-2 col-xs-4">
+				<i class="devicon-photoshop-plain" title="Photoshop"></i>
+			</div>
+			<div class="col-sm-2 col-xs-4">
+				<i class="devicon-php-plain" title="PHP"></i>
+			</div>
+			<div class="col-sm-2 col-xs-4">
+				<i class="devicon-react-original-wordmark" title="React.js"></i>
+			</div>
 		</div>
-		<div class="col-sm-2 col-xs-4">
-			<i class="devicon-github-plain-wordmark" title="Github"></i>
-		</div>
-		<div class="col-sm-2 col-xs-4">
-			<i class="devicon-heroku-original-wordmark" title="Heroku"></i>
-		</div>
-		<div class="col-sm-2 col-xs-4">
-			<i class="devicon-mongodb-plain-wordmark" title="MongoDB"></i>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-offset-2 col-sm-2 col-xs-4">
-			<i class="devicon-python-plain-wordmark" title="Python"></i>
-		</div>	
-		<div class="col-sm-2 col-xs-4">
-			<i class="devicon-photoshop-plain" title="Photoshop"></i>
-		</div>
-		<div class="col-sm-2 col-xs-4">
-			<i class="devicon-php-plain" title="PHP"></i>
-		</div>
-		<div class="col-sm-2 col-xs-4">
-			<i class="devicon-react-original-wordmark" title="React.js"></i>
-		</div>
-	</div>
 
-</div>
-<div id="projectbox" class="container text-center box">
-	<div class="row">
-		<div class="col-xs-6 col-sm-4">
-			<div class="thumbnail">
-				<h2><a href="https://aidnolan.github.io/java-calculator/JavaCalculator.html">Javascript Calculator</a></h2>
-				<br>
-				<a href="https://aidnolan.github.io/java-calculator/JavaCalculator.html">Click here to go to Calculator</a>
-			</div>
-		</div>	
-		<div class="col-xs-6 col-sm-4">
-			<div class="thumbnail">
-				<h2>Color Picker Game</h2>
-			</div>
-		</div>	
-		<div class="col-xs-6 col-sm-4">
-			<div class="thumbnail">
-				<h2>Placeholder</h2>
-			</div>
-		</div>
-		<div class="col-xs-6 col-sm-4">
-			<div class="thumbnail">
-				<h2>Placeholder</h2>
-			</div>
-		</div>
-		<div class="col-xs-6 col-sm-4">
-			<div class="thumbnail">	
-				<h2>Placeholder</h2>
-			</div>
-		</div>	
-		<div class="col-xs-6 col-sm-4">
-			<div class="thumbnail">
-				<h2>Placeholder</h2>
-				<img src="https://lh3.ggpht.com/EaoEf2uSk3CFAhPw9Fk-mbkU7c_qdBMlF5myx1ocDx4cHw54G21wDokRZSySJ3pd4iw=w300">
-			</div>
-		</div>
 	</div>
-</div>
-<div>
-	<form>
-		<div>
-			<input type="text" name="name" placeholder="Please enter your name">
+	<div id="projectbox" class="container text-center box">
+		<div id="projectcover">
+			<div id="projectcovertext">
+				Projects
+				<p>(Please Click To Reveal)</p>
+			</div>
 		</div>
-		<div>
-			<input type="email" name="email" placeholder="Please enter your email addresss">			
+		<div id="theCarousel" class="carousel slide">
+				<ol class="carousel-indicators">
+					<li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#theCarousel" data-slide-to="1"></li>
+					<li data-target="#theCarousel" data-slide-to="2"></li>
+					<li data-target="#theCarousel" data-slide-to="3"></li>
+					<li data-target="#theCarousel" data-slide-to="4"></li>
+					<li data-target="#theCarousel" data-slide-to="5"></li>	
+				</ol>
+				
+				<div class="carousel-inner">
+					<div class="item carouselHeight active">
+						<img class="" src="pomo.png">
+						<div class="slide1"></div>
+						<div class="carousel-caption">
+							<div class="thumbnail visible">
+								<h2><a href="https://aidnolan.github.io/pomodoro/" target="_blank">Pomodoro Clock</a></h2> 
+							</div>
+						</div>
+					</div>
+
+					<div class="item carouselHeight">
+						<img class="" src="javaCalc.png" alt="">
+						<div class="slide2"></div>
+						<div class="carousel-caption">
+							<div class="thumbnail visible">
+								<h2><a href="https://aidnolan.github.io/java-calculator/" target="_blank">Javascript Calculator</a></h2>
+								<br>
+								<!-- <a href="https://aidnolan.github.io/java-calculator/" target="_blank">Click here to go to Calculator</a> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="item carouselHeight">
+						<img class="" src="patatap.png" alt="">
+						<div class="slide3">
+				
+						</div>
+						<div class="carousel-caption">
+							<div class="thumbnail">
+								<h2><a href="">Patatap Clone</a></h2>
+								<br>
+								<a href="https://aidnolan.github.io/patatapClone/" target="_blank">Click here</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="item carouselHeight">
+						<img class="" src="patatap.png" alt="">
+						
+						<div class="slide4">
+				
+						</div>
+						<div class="carousel-caption">
+							<div class="thumbnail">
+								<h2><a href="">Color Picker Game</a></h2>
+								<br>
+								<a href="">Click here</a>
+							</div>	
+						</div>
+					</div>
+
+					<div class="item carouselHeight">
+						<img class="" src="patatap.png" alt="">
+						
+
+						<div class="slide5">
+				
+						</div>
+						<div class="carousel-caption">
+							TEST5
+						</div>
+					</div>
+
+					<div class="item carouselHeight">
+						<img src="patatap.png" alt="">
+
+
+						<div class="slide6">
+				
+						</div>
+						<div class="carousel-caption">
+							TEST6
+						</div>
+					</div>
+				</div>
+				<a class="left carousel-control" href="#theCarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+
+				<a class="right carousel-control" href="#theCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+		
+		<!-- <div class="row">
+			
+			
+			
+			<div class="col-xs-6 col-sm-4">
+				<div class="thumbnail">
+					<h2>Pomodoro Clock</h2>
+					<br>
+					<a href="https://aidnolan.github.io/pomodoro/" target="_blank">Click here</a>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<div class="thumbnail">	
+					<h2>Placeholder</h2>
+				</div>
+			</div>	
+			<div class="col-xs-6 col-sm-4">
+				<div class="thumbnail">
+					<h2>Placeholder</h2>
+					<img class="hidden-sm hidden-xs" src="https://lh3.ggpht.com/EaoEf2uSk3CFAhPw9Fk-mbkU7c_qdBMlF5myx1ocDx4cHw54G21wDokRZSySJ3pd4iw=w300">
+				</div>
+			</div>
+		</div> -->
+	</div>
+	<div id="formbox" class= "container text-center box">
+		<div class="row">
+			<div class="col-xs-6">
+					
+				<div class="profiles" id="linkedIn">
+					LinkedIn
+				</div>
+				<div class="profiles" id="gitHub">
+					Github
+				</div>
+				<div class="profiles" id="codePen">
+					Code Pen
+				</div>
+				<div class="profiles" id="email">
+					Email Address
+				</div>
+
+			</div>
+			<form class="col-xs-6" method="POST" action="https://formspree.io/aidnolan@hotmail.com">
+				<div>	
+					<div class="contactForm">
+						<label>Name:</label>
+						<input type="text" name="name" placeholder="Name">
+					</div>
+					<div class="contactForm">
+						<label>Email:</label>
+						<input type="email" name="email" placeholder="Email">			
+					</div>
+					<input type="submit" name="submit">Submit</input>
+				</div>
+
+			</form>
 		</div>
-		<button>Submit</button>
-	</form>
 </div>
 	<script
 	  	src="https://code.jquery.com/jquery-3.2.1.min.js"
