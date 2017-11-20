@@ -247,7 +247,7 @@
 	</div>
 	<div id="formbox" class= "container text-center box">
 		<div class="row">
-			<div class="col-xs-6">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					
 				<div class="profiles" id="linkedIn">
 					LinkedIn
@@ -263,17 +263,23 @@
 				</div>
 
 			</div>
-			<form class="col-xs-6" method="POST" action="https://formspree.io/aidnolan@hotmail.com">
+			<form class="col-lg-6 col-md-6 col-sm-6 col-xs-12" method="POST" action="https://formspree.io/anolan.webdev@gmail.com">
 				<div>	
 					<div class="contactForm">
-						<label>Name:</label>
+						
 						<input type="text" name="name" placeholder="Name">
 					</div>
+					<div class="clearfix"></div>
 					<div class="contactForm">
-						<label>Email:</label>
 						<input type="email" name="email" placeholder="Email">			
 					</div>
-					<input type="submit" name="submit">Submit</input>
+					<div class="clearfix"></div>
+					<div class="contactForm">
+						<textarea maxlength="500" placeholder="Please enter your message here"></textarea>
+						<div>Characters remaining: <span id="wordCounter"></span></div>
+					</div>
+					<div class="clearfix"></div>
+					<input class="btn btn-primary" type="submit" name="submit"></input>
 				</div>
 
 			</form>

@@ -13,4 +13,14 @@
 		$('.carousel').carousel(); 
 	});
 
+	function wordReducer(){
+		var textLength = $("textarea").val().length;
+		$("#wordCounter").html(500 - textLength);
+	} 
+	wordReducer();
+
+	$("textarea").on("keyup", function(){
+		wordReducer();
+	});
+
 })();

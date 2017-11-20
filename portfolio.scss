@@ -30,7 +30,7 @@ nav.navbar {
 	width: 100%;
 	background-color: $color-theme;
 	z-index: 500;
-	border: 0;
+	border: 1px solid black;
 	float: left;
 	@include border-radius(0);
 	.navbar-brand {
@@ -154,7 +154,6 @@ nav.navbar {
 			}	
 
 			#projectcover {
-				/*p {transform: scaleY(10) perspective(1em) rotateX(10deg) translate3d(-19%, -20%, -0.1em);}*/
 				color: white;
 				padding-top: 9.8vw;
 				width: 100%;
@@ -188,9 +187,19 @@ nav.navbar {
 		&#formbox {
 			padding: 50px;
 			height: 50vw;
-
+			
 			.contactForm {
 				padding: 10px 0;
+				float: left;
+				width: 100%;
+				textarea {
+					width: 100%;
+					height: 200px;
+				}
+				
+				input {
+					width: 100%;
+				}
 			}
 
 			.profiles {

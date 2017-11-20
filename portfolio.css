@@ -11,7 +11,7 @@ nav.navbar {
   width: 100%;
   background-color: #97b2e2;
   z-index: 500;
-  border: 0;
+  border: 1px solid black;
   float: left;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -97,7 +97,6 @@ nav.navbar {
       .container.box#projectbox .thumbnail {
         background-color: #ebeff5; }
       .container.box#projectbox #projectcover {
-        /*p {transform: scaleY(10) perspective(1em) rotateX(10deg) translate3d(-19%, -20%, -0.1em);}*/
         color: white;
         padding-top: 9.8vw;
         width: 100%;
@@ -121,7 +120,14 @@ nav.navbar {
       padding: 50px;
       height: 50vw; }
       .container.box#formbox .contactForm {
-        padding: 10px 0; }
+        padding: 10px 0;
+        float: left;
+        width: 100%; }
+        .container.box#formbox .contactForm textarea {
+          width: 100%;
+          height: 200px; }
+        .container.box#formbox .contactForm input {
+          width: 100%; }
       .container.box#formbox .profiles {
         padding: 20px 0; }
 
