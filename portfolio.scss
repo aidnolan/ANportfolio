@@ -8,17 +8,18 @@ $alt-color-theme: rgba(151,178,226, 0.98);
           border-radius: $radius;
 }
 
-@mixin blur($value) {
+/*@mixin blur($value) {
   -webkit-filter: blur($value);
      -moz-filter: blur($value);
        -o-filter: blur($value);
           filter: blur($value);
-}
+}*/
 
-@media only screen and (max-device-width: 1024px) {
-	#titlebox {
-		background-attachment: scroll;
-	}
+@mixin background-size($background-size) {
+  -webkit-background-size: $background-size;
+     -moz-background-size: $background-size;
+       -o-background-size: $background-size;
+          background-size: $background-size;
 }
 
 i {
@@ -69,7 +70,7 @@ nav.navbar {
 	    background-attachment: fixed;
 	    background-position: center;
 	    background-repeat: no-repeat;
-	    background-size: cover;
+	    @include background-size(cover);
 	    /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
 
 		&#titlebox {

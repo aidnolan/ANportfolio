@@ -1,6 +1,9 @@
-@media only screen and (max-device-width: 1024px) {
-  #titlebox {
-    background-attachment: scroll; } }
+/*@mixin blur($value) {
+  -webkit-filter: blur($value);
+     -moz-filter: blur($value);
+       -o-filter: blur($value);
+          filter: blur($value);
+}*/
 i {
   font-size: 60px; }
   i.fa-home {
@@ -42,6 +45,9 @@ nav.navbar {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */ }
     .container.box#titlebox {
