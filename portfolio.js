@@ -8,7 +8,7 @@
 		// $(".carouselHeight img").css("filter","blur(0px)");
 		$(".carousel-caption").css("display", "none");
 	});
-	$("#projectcover").on("click", function(){
+	$("#coverClickArea").on("click", function(){
 		$("#projectcover").fadeOut("slow", function(){});
 		$('.carousel').carousel(); 
 	});

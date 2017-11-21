@@ -15,6 +15,12 @@ $alt-color-theme: rgba(151,178,226, 0.98);
           filter: blur($value);
 }
 
+@media only screen and (max-device-width: 1024px) {
+	#titlebox {
+		background-attachment: scroll;
+	}
+}
+
 i {
 	font-size: 60px;
 	&.fa-home {
@@ -64,14 +70,15 @@ nav.navbar {
 	    background-position: center;
 	    background-repeat: no-repeat;
 	    background-size: cover;
+	    /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
 
 		&#titlebox {
 			box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4);
 			background-image: url("macKeyboard.jpg");		
 	    	background-attachment: fixed;
 	    	background-position: center;
-	    	padding-top: 17vw;
-	    	height: 60vw;
+	    	padding-top: 15vw;
+	    	height: 54vw;
 	    	color: white ;
 			text-shadow: 5px 5px rgba(0,0,0,0.6);
 	    	&.page-header {
@@ -168,12 +175,18 @@ nav.navbar {
 
 				#projectcovertext {
 					transform: perspective(600px) rotateX(-38deg);
-				}
-
-				&:hover {
-					color: rgb(34,156,73);
-					cursor: pointer;
-					text-shadow: 0 0;
+					margin: 0 33.3vw;
+					#subTitleProj {
+						font-size: 3vw;
+						
+					}
+					
+					#coverClickArea:hover {
+						color: rgb(34,156,73);
+						cursor: pointer;
+						text-shadow: 0 0;
+						
+					}
 				}
 
 				p {
@@ -187,23 +200,37 @@ nav.navbar {
 		&#formbox {
 			padding: 50px;
 			height: 50vw;
-			
+			background-image: url();
 			.contactForm {
 				padding: 10px 0;
-				float: left;
+				font-size: 2vw;
 				width: 100%;
 				textarea {
-					width: 100%;
 					height: 200px;
 				}
-				
-				input {
+				.inputBoxes {
 					width: 100%;
+					border-top: 2px solid grey;
+					border-bottom: 2px solid lightgray;;
+					border-right: 2px solid lightgray;
+					border-left: 5px solid $color-theme;
+					padding-left: 5px;
 				}
+
+				.btn {
+					width: 60%;
+					text-align: center;
+				}
+				#wordCountText {
+					float: right;
+					font-size: 1.5vw;
+				}
+
 			}
 
 			.profiles {
 				padding: 20px 0;
+				font-size: 2.5vw;
 			}
 
 		}

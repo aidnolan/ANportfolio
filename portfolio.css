@@ -1,3 +1,6 @@
+@media only screen and (max-device-width: 1024px) {
+  #titlebox {
+    background-attachment: scroll; } }
 i {
   font-size: 60px; }
   i.fa-home {
@@ -39,14 +42,15 @@ nav.navbar {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */ }
     .container.box#titlebox {
       box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
       background-image: url("macKeyboard.jpg");
       background-attachment: fixed;
       background-position: center;
-      padding-top: 17vw;
-      height: 60vw;
+      padding-top: 15vw;
+      height: 54vw;
       color: white;
       text-shadow: 5px 5px rgba(0, 0, 0, 0.6); }
       .container.box#titlebox.page-header {
@@ -109,26 +113,41 @@ nav.navbar {
         text-align: center;
         text-shadow: 2px 2px rgba(10, 10, 255, 0.4); }
         .container.box#projectbox #projectcover #projectcovertext {
-          transform: perspective(600px) rotateX(-38deg); }
-        .container.box#projectbox #projectcover:hover {
-          color: #229c49;
-          cursor: pointer;
-          text-shadow: 0 0; }
+          transform: perspective(600px) rotateX(-38deg);
+          margin: 0 33.3vw; }
+          .container.box#projectbox #projectcover #projectcovertext #subTitleProj {
+            font-size: 3vw; }
+          .container.box#projectbox #projectcover #projectcovertext #coverClickArea:hover {
+            color: #229c49;
+            cursor: pointer;
+            text-shadow: 0 0; }
         .container.box#projectbox #projectcover p {
           font-size: 0.5em; }
     .container.box#formbox {
       padding: 50px;
-      height: 50vw; }
+      height: 50vw;
+      background-image: url(); }
       .container.box#formbox .contactForm {
         padding: 10px 0;
-        float: left;
+        font-size: 2vw;
         width: 100%; }
         .container.box#formbox .contactForm textarea {
-          width: 100%;
           height: 200px; }
-        .container.box#formbox .contactForm input {
-          width: 100%; }
+        .container.box#formbox .contactForm .inputBoxes {
+          width: 100%;
+          border-top: 2px solid grey;
+          border-bottom: 2px solid lightgray;
+          border-right: 2px solid lightgray;
+          border-left: 5px solid #97b2e2;
+          padding-left: 5px; }
+        .container.box#formbox .contactForm .btn {
+          width: 60%;
+          text-align: center; }
+        .container.box#formbox .contactForm #wordCountText {
+          float: right;
+          font-size: 1.5vw; }
       .container.box#formbox .profiles {
-        padding: 20px 0; }
+        padding: 20px 0;
+        font-size: 2.5vw; }
 
 /*# sourceMappingURL=portfolio.css.map */
