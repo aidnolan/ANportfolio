@@ -74,13 +74,7 @@ nav.navbar {
 	    background-repeat: no-repeat;
 	    @include background-size(cover);
 	    /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
-	    @media only screen and (max-device-width: 1024px) {
-			&#titlebox {
-				background-attachment: scroll; 
-				background-image: url("");
-				
-			}
-		}
+	    
 		&#titlebox {
 			box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4);
 			background-image: url("macKeyboard.jpg");		
@@ -104,6 +98,7 @@ nav.navbar {
 
 			
 		}	   
+
 
 		&#introbox {
 			
@@ -245,4 +240,11 @@ nav.navbar {
 		}
 	}
 
+}
+
+@media only screen and (max-device-width: 1024px) {
+	.container.box#titlebox {
+		background-attachment: scroll;
+		
+	}
 }
