@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal Web Dev Portfolio",
+  "main": "portfolio.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aidnolan/ANportfolio.git"
+  },
+  "author": "Aidan Nolan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aidnolan/ANportfolio/issues"
+  },
+  "homepage": "https://github.com/aidnolan/ANportfolio#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^3.2.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

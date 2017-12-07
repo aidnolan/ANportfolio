@@ -4,11 +4,11 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-		<title>A. Nolan Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<title>A. Nolan Portfolio</title>
 </head>
 <body>
 	<nav class="navbar navbar-default">
@@ -37,14 +37,14 @@
 	<div id="titlebox" class="container text-center box page-header">
 		<div class="row">
 			<h1>Aidan Nolan</h1>
-			<h1>Junior Web Developer</h1>
+			<h1>Web Developer</h1>
 		</div>
 	</div>
 	<div id="aboutMe">
 	</div>
 	<div id="introbox" class="container text-center box">
 		<div class="row" tabindex="7">
-			About Me
+			<h1>About Me</h1>
 		</div>
 		<div class="clearfix"></div>
 		<div class="row">
@@ -90,9 +90,12 @@
 			<div class="col-sm-2 col-xs-4">
 				<i class="devicon-express-original" title="Express.js"></i>
 			</div>	
-			<div class="col-sm-2 col-xs-4">
+			<!-- <div class="col-sm-2 col-xs-4">
 				<i class="devicon-git-plain-wordmark" title="Git"></i>
-			</div>
+			</div> -->
+			<div class="col-sm-2 col-xs-4">
+				<i class="devicon-python-plain-wordmark" title="Python"></i>
+			</div>	
 			<div class="col-sm-2 col-xs-4">
 				<i class="devicon-github-plain-wordmark" title="Github"></i>
 			</div>
@@ -104,18 +107,16 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-offset-2 col-sm-2 col-xs-4">
-				<i class="devicon-python-plain-wordmark" title="Python"></i>
-			</div>	
-			<div class="col-sm-2 col-xs-4">
+			
+			<!-- <div class="col-sm-2 col-xs-4">
 				<i class="devicon-photoshop-plain" title="Photoshop"></i>
-			</div>
-			<div class="col-sm-2 col-xs-4">
+			</div> -->
+			<!-- <div class="col-sm-2 col-xs-4">
 				<i class="devicon-php-plain" title="PHP"></i>
-			</div>
-			<div class="col-sm-2 col-xs-4">
+			</div> -->
+			<!-- <div class="col-sm-2 col-xs-4">
 				<i class="devicon-react-original-wordmark" title="React.js"></i>
-			</div>
+			</div> -->
 		</div>
 
 	</div>
@@ -129,168 +130,222 @@
 			</div>
 		</div>
 		<div id="theCarousel" class="carousel slide">
-				<ol class="carousel-indicators">
-					<li data-target="#theCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#theCarousel" data-slide-to="1"></li>
-					<li data-target="#theCarousel" data-slide-to="2"></li>
-					<li data-target="#theCarousel" data-slide-to="3"></li>
-					<li data-target="#theCarousel" data-slide-to="4"></li>
-					<li data-target="#theCarousel" data-slide-to="5"></li>	
-				</ol>
-				
-				<div class="carousel-inner">
-					<div class="item carouselHeight active">
-						<img class="" src="pomo.png">
-						<div class="slide1"></div>
-						<div class="carousel-caption">
-							<div class="thumbnail visible">
-								<h2><a href="https://aidnolan.github.io/pomodoro/" target="_blank">Pomodoro Clock</a></h2> 
+			<ol class="carousel-indicators">
+				<li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#theCarousel" data-slide-to="1"></li>
+				<li data-target="#theCarousel" data-slide-to="2"></li>
+				<!-- <li data-target="#theCarousel" data-slide-to="3"></li> -->
+				<!-- <li data-target="#theCarousel" data-slide-to="4"></li> -->
+				<!-- <li data-target="#theCarousel" data-slide-to="5"></li>	 -->
+			</ol>
+			<div class="clearfix"></div>
+			<div class="carousel-inner">
+				<div class="item carouselHeight active">
+					<img class="" src="pomo.png">
+					<div class="slide1"></div>
+					<div class="carousel-capt">
+						<div class="visible">
+							<h2>Pomodoro Clock</h2>
+							<p>This clock is based on the Pomodoro Technique and allows the user to set their Work Time and Break Time. The clock alternates between the two timers automatically, as the respective timer reaches 00:00</p>
+							<div>
+								<button class="projectButton">
+									<a href="https://aidnolan.github.io/pomodoro/" target="_blank">Visit Page</a>
+								</button>
+								<button class="projectButton">
+									<a href="https://github.com/aidnolan/pomodoro/" target="_blank">View Code</a>
+								</button>
+							</div> 
+						</div>
+					</div>
+					
+
+				</div>
+
+				<div class="item carouselHeight">
+					<img class="" src="javaCalc.png" alt="">
+					<div class="slide2"></div>
+					<div class="carousel-capt">
+						<div class="visible col-xs-12">
+							<h2>Javascript Calculator</h2>
+							<p>A functional calculator with mini update display. Lovingly crafted using JavaScript, CSS3 and HTML5</p>	
+							<div>
+								<button class="projectButton">
+									<a href="https://aidnolan.github.io/java-calculator/" target="_blank">Visit Page</a></button>
+								<button class="projectButton">
+									<a href="https://github.com/aidnolan/java-calculator/" target="_blank">View Code</a>
+								</button>
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<div class="item carouselHeight">
-						<img class="" src="javaCalc.png" alt="">
-						<div class="slide2"></div>
-						<div class="carousel-caption">
-							<div class="thumbnail visible">
-								<h2><a href="https://aidnolan.github.io/java-calculator/" target="_blank">Javascript Calculator</a></h2>
-								<br>
-								<!-- <a href="https://aidnolan.github.io/java-calculator/" target="_blank">Click here to go to Calculator</a> -->
+				<div class="item carouselHeight">
+					<img class="" src="patatap.png" alt="">
+					<div class="slide3">
+			
+					</div>
+					<div class="carousel-capt">
+						<div class="">
+							<h2>Patatap Clone</h2>
+							<p>This is a fun page that allows the user to play different sounds and display ramdomly sized, coloured and located circles by pressing keyboard keys (A-Z only). The sound emitted is unique to the key pressed</p>
+							<div class="">
+								<button class="projectButton">
+									<a href="https://aidnolan.github.io/patatapClone/" target="_blank">Visit Page</a>
+								</button>
+								<button class="projectButton">
+									<a href="https://github.com/aidnolan/patatapClone/" target="_blank">View Code</a>
+								</button>
 							</div>
-						</div>
-					</div>
-
-					<div class="item carouselHeight">
-						<img class="" src="patatap.png" alt="">
-						<div class="slide3">
-				
-						</div>
-						<div class="carousel-caption">
-							<div class="thumbnail">
-								<h2><a href="">Patatap Clone</a></h2>
-								<br>
-								<a href="https://aidnolan.github.io/patatapClone/" target="_blank">Click here</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="item carouselHeight">
-						<img class="" src="patatap.png" alt="">
-						
-						<div class="slide4">
-				
-						</div>
-						<div class="carousel-caption">
-							<div class="thumbnail">
-								<h2><a href="">Color Picker Game</a></h2>
-								<br>
-								<a href="">Click here</a>
-							</div>	
-						</div>
-					</div>
-
-					<div class="item carouselHeight">
-						<img class="" src="patatap.png" alt="">
-						
-
-						<div class="slide5">
-				
-						</div>
-						<div class="carousel-caption">
-							TEST5
-						</div>
-					</div>
-
-					<div class="item carouselHeight">
-						<img src="patatap.png" alt="">
-
-
-						<div class="slide6">
-				
-						</div>
-						<div class="carousel-caption">
-							TEST6
+							
+							
 						</div>
 					</div>
 				</div>
-				<a class="left carousel-control" href="#theCarousel" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-				</a>
 
-				<a class="right carousel-control" href="#theCarousel" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right"></span>
-				</a>
-			</div>
-		
-		<!-- <div class="row">
+				<!-- <div class="item carouselHeight">
+					<img class="" src="patatap.png" alt="">
+					
+					<div class="slide4">
 			
+					</div>
+					<div class="carousel-caption">
+						<div class="thumbnail">
+							<h2><a href="">Color Picker Game</a></h2>
+							<br>
+							<a href="">Click here</a>
+						</div>	
+					</div>
+				</div>
+
+				<div class="item carouselHeight">
+					<img class="" src="patatap.png" alt="">
+					
+
+					<div class="slide5">
 			
+					</div>
+					<div class="carousel-caption">
+						TEST5
+					</div>
+				</div>
+
+				<div class="item carouselHeight">
+					<img src="patatap.png" alt="">
+
+
+					<div class="slide6">
 			
-			<div class="col-xs-6 col-sm-4">
-				<div class="thumbnail">
-					<h2>Pomodoro Clock</h2>
-					<br>
-					<a href="https://aidnolan.github.io/pomodoro/" target="_blank">Click here</a>
-				</div>
+					</div>
+					<div class="carousel-caption">
+						TEST6
+					</div>
+				</div> -->
 			</div>
-			<div class="col-xs-6 col-sm-4">
-				<div class="thumbnail">	
-					<h2>Placeholder</h2>
+			<a class="left carousel-control" href="#theCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+
+			<a class="right carousel-control" href="#theCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+	</div>
+	<div id="coursebox" class="container text-center box">
+		<div class="row">
+			<h1>Courses Undertaken</h1>
+			<div class="col-xs-12">	
+				<div id="courseDrop" class="dropdown">
+				   	<button id="courseButton" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+				   		Courses Undertaken <span class="caret"></span>
+					</button>
+				    <ul class="dropdown-menu">
+				      <li><a href="https://www.freecodecamp.org/aidnolan" target="_blank"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> freeCodeCamp Frontend Course</a></li>
+					<li>
+						<a href="https://www.udemy.com/the-web-developer-bootcamp/" target="_blank"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> The Web Developer Bootcamp (43 hours)</a>
+					</li>
+					<li>
+						<a href="https://www.udemy.com/the-complete-web-developer-course-2/" target="_blank"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> The Complete Web Developer Course 2.0 (30.5 hours)</a>
+					</li>
+					<li>
+						<a href="https://www.udemy.com/python-and-django-full-stack-web-developer-bootcamp/" target="_blank"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Python and Django Full Stack Web Developer Bootcamp (32 hours)</a>
+					</li>
+					<li>
+						<a href="https://www.codewars.com/users/aidnolan" target="_blank"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> CodeWars Challenges</a>
+					</li>
+					<li>
+						<a href="https://teamtreehouse.com/" target="_blank"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Treehouse Courses on JavaScript</a>
+					</li>
+					<li>
+						<a href="https://www.codecademy.com/catalog/subject/web-development" target="_blank"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Codecademy Exercises</a>
+					</li>
+				    </ul>
 				</div>
-			</div>	
-			<div class="col-xs-6 col-sm-4">
-				<div class="thumbnail">
-					<h2>Placeholder</h2>
-					<img class="hidden-sm hidden-xs" src="https://lh3.ggpht.com/EaoEf2uSk3CFAhPw9Fk-mbkU7c_qdBMlF5myx1ocDx4cHw54G21wDokRZSySJ3pd4iw=w300">
-				</div>
+				<ul id="coursesUndertaken">
+					<li><a href="https://www.freecodecamp.org/aidnolan" target="_blank"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> freeCodeCamp Frontend Course</a></li>
+					<li>
+						<a href="https://www.udemy.com/the-web-developer-bootcamp/" target="_blank"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> The Web Developer Bootcamp (43 hours)</a>
+					</li>
+					<li>
+						<a href="https://www.udemy.com/the-complete-web-developer-course-2/" target="_blank"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> The Complete Web Developer Course 2.0 (30.5 hours)</a>
+					</li>
+					<li>
+						<a href="https://www.udemy.com/python-and-django-full-stack-web-developer-bootcamp/" target="_blank"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Python and Django Full Stack Web Developer Bootcamp (32 hours)</a>
+					</li>
+					<li>
+						<a href="https://www.codewars.com/users/aidnolan" target="_blank"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> CodeWars Challenges</a>
+					</li>
+					<li>
+						<a href="https://teamtreehouse.com/" target="_blank"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Treehouse Courses on JavaScript</a>
+					</li>
+					<li>
+						<a href="https://www.codecademy.com/catalog/subject/web-development" target="_blank"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Codecademy Exercises</a>
+					</li>
+				</ul>
 			</div>
-		</div> -->
+		</div>
 	</div>
 	<div id="formbox" class= "container text-center box">
-
 		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					
-				<div class="profiles" id="linkedIn">
-					LinkedIn
+			<div id="mySocial" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<div class="profiles col-sm-12 col-xs-3" id="gitHub">
+					<a href="https://github.com/aidnolan" target="_blank"><img src="logos/GithubLogo.png"><span>My Github repositories</span></a>
 				</div>
-				<div class="profiles" id="gitHub">
-					Github
+				<div class="profiles col-sm-12 col-xs-3" id="codePen">
+					<a href="https://codepen.io/aidnolan/" target="_blank"><img src="logos/CodePenLogo.png"><span>View projects on CodePen</span></a>
 				</div>
-				<div class="profiles" id="codePen">
-					Code Pen
+				<div class="profiles col-sm-12 col-xs-3" id="linkedIn">
+					<a href="https://www.linkedin.com/in/aidan-nolan-724a8349" target="_blank"><img src="logos/LinkedInLogo.png"><span>LinkedIn Profile</span></a>
 				</div>
-				<div class="profiles" id="email">
-					Email Address
+				<div class="profiles col-sm-12 col-xs-3" id="email">
+					<a href="mailto:anolan.webdev@gmail.com?Subject=Web%20Development%20Site%20Query"><img src="logos/EmailLogo.png"><span>Email Address</span></a>
 				</div>
-
 			</div>
-			<div class="row">			
-				<form class="col-lg-6 col-md-6 col-sm-6 col-xs-12" method="POST" action="https://formspree.io/anolan.webdev@gmail.com">
-					<div>	
-						<div class="contactForm">	
-							<input class="inputBoxes" type="text" name="name" placeholder="Name">
-						</div>
-						<div class="clearfix"></div>
-						<div class="contactForm">
-							<input class="inputBoxes" type="email" name="email" placeholder="Email">			
-						</div>
-						<div class="clearfix"></div>
-						<div class="contactForm">
-							<textarea class="inputBoxes" maxlength="500" placeholder="Please enter your message here"></textarea>
-							<div id="wordCountText">Characters remaining: <span id="wordCounter"></span></div>
-						</div>
-						<div class="clearfix"></div>
-						<div class="contactForm">
-							<input class="btn btn-primary" type="submit" name="submit"></input>
-						</div>
+			<div id="myForm" class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
+				<form method="POST" action="https://formspree.io/anolan.webdev@gmail.com">
+					<div class="contactForm">	
+						<input class="inputBoxes" type="text" name="name" placeholder="Name">
 					</div>
-
+					<div class="clearfix"></div>
+					<div class="contactForm">
+						<input class="inputBoxes" type="email" name="email" placeholder="Email">			
+					</div>
+					<div class="clearfix"></div>
+					<div class="contactForm">
+						<textarea class="inputBoxes" maxlength="500" placeholder="Please enter your message here"></textarea>
+						<div id="wordCountText">Characters remaining: <span id="wordCounter"></span></div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="contactForm">
+						<input class="btn btn-primary" type="submit" name="submit"></input>
+					</div>
 				</form>
 			</div>
 		</div>
-</div>
+	</div>
+	<div class="clearfix"></div>
+	<div id="footerbox" class= "container text-center box">
+		<div>Copyright © <span id="copyYear"></span> Mr Aidan Nolan</div>
+	</div>
 	<script
 	  	src="https://code.jquery.com/jquery-3.2.1.min.js"
   		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="

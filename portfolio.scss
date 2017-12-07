@@ -1,5 +1,5 @@
 $color-theme: rgba(151,178,226, 1);
-$alt-color-theme: rgba(151,178,226, 0.98);
+$alt-color-theme: royalblue;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -91,7 +91,6 @@ nav.navbar {
 	    		font-size: 8vw;
 	    	}
 	    	.row {
-	    		
 	    		margin: 0;
 	    	}
 
@@ -139,15 +138,15 @@ nav.navbar {
 			padding: 0;
 			height: 50vw;
 			background-image: url("bgroundimg.jpg");
-			.carousel-caption {
+			.carousel-capt {
 				display: none;
 			}
-
-			.carouselHeight img:hover ~ .carousel-caption {
+			
+			.carouselHeight img:hover ~ .carousel-capt {
 				display: block;	
 			}
 
-			.carousel-caption:hover{
+			.carousel-capt:hover{
 				display: block;
 			}
 
@@ -156,13 +155,43 @@ nav.navbar {
 				width: auto;
 				margin: auto;
 			}
-			
-			/*.row:first-of-type {
-				margin-top: 20px; 
-			}*/
-			.thumbnail {
-				background-color: rgb(235,239,245);
-			}	
+
+			.carousel-capt {
+				background-color: rgba(235,239,245, 0.9);
+				font-size: 2vw;
+				position: absolute;
+			    right: 15%;
+			    bottom: 10vw;
+			    left: 15%;
+			    z-index: 10;
+			    padding: 0px 20px 20px 20px;
+			    /*padding-bottom: 20px;*/
+			    color: #fff;
+			    text-align: center;
+			    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+			    @include border-radius(10px);
+			    h2 {
+			    	font-size: 3vw;
+			    }
+			    a, p, h2 {
+			    	color: black;
+			    	text-decoration: none;
+			    }
+			    .projectButton {
+					height: 4vw;
+					font-size: 2vw;
+					padding: 0.3vw 0.5vw;
+					margin: 0vw 1vw;
+					@include border-radius(20px);
+					box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+			    }
+			}
+
+			/*.thumbnail h2 a {
+				/*color: black;*/
+				/*font-size: 4vw;*/
+				/*padding: 0;*/
+			/*}*/
 
 			#projectcover {
 				color: white;
@@ -194,20 +223,63 @@ nav.navbar {
 				}
 
 				p {
-					font-size: 0.5em;
-
+					font-size: 0.5vw;
 				}
 				
 			}		
 		}
 
+		&#coursebox {
+			
+			font-family: 'Raleway', helvetica;
+			font-size: 25px;
+			background-color: rgba(151,178,226, 1);
+			padding: 10px 40px;
+			text-align: left;
+			padding-left: 100px;
+			#courseDrop {
+				display: none;
+				text-align: center;
+			}
+
+			#courseButton {
+				font-size: 15px;
+				width: 75%;
+			}
+
+			
+			i {
+				padding-right: 10px;
+			}
+
+			ul {
+				
+				li {
+					padding: 10px 0;
+					list-style-type: none; 
+					&:hover {
+						color: grey;
+					}
+					a {
+						color: black;
+						text-decoration: none;
+						&:hover {
+							color: white;
+						}
+						
+					}
+				}
+			}
+		}
+
 		&#formbox {
 			padding: 50px;
+			padding-bottom: 30vw;
 			height: 50vw;
 			background-image: url();
 			.contactForm {
 				padding: 10px 0;
-				font-size: 2vw;
+				font-size: 20px;
 				width: 100%;
 				textarea {
 					height: 200px;
@@ -227,16 +299,50 @@ nav.navbar {
 				}
 				#wordCountText {
 					float: right;
-					font-size: 1.5vw;
+					font-size: 15px;
 				}
 
 			}
 
-			.profiles {
-				padding: 20px 0;
-				font-size: 2.5vw;
+			#myForm {
+				padding: 10px 20px;
 			}
 
+			#mySocial {
+				padding: 0;
+			}
+
+			.profiles {
+				padding: 20px 0 20px 0;
+				font-size: 18px;
+				text-align: left;
+				.float {
+					float: left;
+				}
+				img {
+					padding-right: 20px;
+					height: 48px;
+					width: 70px;
+				}
+				a {
+					position: relative;
+					top: 3px;
+					color: black;
+					text-decoration: none;
+					&:hover {
+						color: $alt-color-theme;
+					};
+				}
+
+			}
+
+		}
+
+		&#footerbox {
+			background-color: lightgray;
+			height: 40px;
+			padding: 10px 20px;
+			text-align: right;
 		}
 	}
 
@@ -248,3 +354,4 @@ nav.navbar {
 		
 	}
 }
+
