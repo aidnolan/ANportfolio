@@ -14,35 +14,40 @@
 		var viewerWidth = $(window).width();
 		if(viewerWidth < 768){
 			$(".profiles span").css("display", "none");
+			$("#formbox .profiles").css("textAlign","center");
 			$(".navbar-nav a").css("width", "100%");
 			$("#myForm").insertBefore($("#mySocial"));
-			$("#mySocial").css("padding","20px 0 20px 50px");
+			$("#mySocial").css("padding","20px 0 20px 0");
 			$("#coursebox h1, #coursesUndertaken").css("display", "none");
 			$("#courseDrop").css("display", "block");
-		}
-		else {
+			$("#coursebox").css("padding", "10px 20px");
+			$(".carousel-capt").attr("id", "smallCapt");
+
+		} else {
 			$(".profiles span").css("display", "inline");
+			$("#formbox .profiles").css("textAlign","left");
 			$(".navbar-nav a").css("width", "100px");
 			$("#mySocial").insertBefore($("#myForm"));
 			$("#coursebox h1, #coursesUndertaken").css("display", "block");
 			$("#courseDrop").css("display", "none");
+			$("#coursebox").css("padding", "30px 150px");
 		}
 	}
 	$(window).resize(widthView);
 		
 
 	$(".carouselHeight img, .carousel-capt, ol.carousel-indicators").on("mouseenter", function(){
-		// $(".carouselHeight img").css("filter","blur(2px)");
 		$(".carousel-capt").css("display", "block");
 	});
+	
 	$(".carouselHeight img").on("mouseleave", function(){
-		// $(".carouselHeight img").css("filter","blur(0px)");
 		$(".carousel-capt").css("display", "none");
 	});
+
 	$("#coursebox, #skillbox, .carousel-control").on("mouseenter", function(){
-		// $(".carouselHeight img").css("filter","blur(2px)");
 		$(".carousel-capt").css("display", "none");
 	});
+
 	$("#coverClickArea").on("click", function(){
 		$("#projectcover").fadeOut("slow", function(){});
 		$('.carousel').carousel(); 
