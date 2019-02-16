@@ -4,12 +4,13 @@
 	var date = new Date();
 	$("#copyYear").html(date.getFullYear());
 
-
+	// Word count tracker for message box
 	function wordReducer(){
 		var textLength = $("textarea").val().length;
 		$("#wordCounter").html(500 - textLength);
 	} 
 
+	// Instructions to browser re: size reduction in classes/IDs specified
 	function widthView(){
 		var viewerWidth = $(window).width();
 		if(viewerWidth < 768){
@@ -35,7 +36,7 @@
 	}
 	$(window).resize(widthView);
 		
-
+	// Functionality for Projects carousel and caption box re: visibility
 	$(".carouselHeight img, .carousel-capt, ol.carousel-indicators").on("mouseenter", function(){
 		$(".carousel-capt").css("display", "block");
 	});
