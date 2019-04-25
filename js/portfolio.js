@@ -8,7 +8,21 @@
 	function wordReducer(){
 		var textLength = $("textarea").val().length;
 		$("#wordCounter").html(500 - textLength);
-	} 
+	}
+
+	$("#expandProfile").on("click", ()=>{
+		if($(".hiddenProfile").css("display") == "none"){
+			
+			$(".hiddenProfile").css("display","inline-block");
+			$("#expandCollapse").text("less");
+		}
+		else{
+			$(".hiddenProfile").css("display","none");
+			$("#expandCollapse").text("more");
+		}
+		console.log("Huh");
+		
+	})
 
 	// Instructions to browser re: size reduction in classes/IDs specified
 	function widthView(){
@@ -23,6 +37,7 @@
 			$("#courseDrop").css("display", "block");
 			$("#coursebox").css("padding", "10px 20px");
 			$(".carousel-capt").attr("id", "smallCapt");
+			$("#introbox #introPic").css("width", "45%")
 
 		} else {
 			$(".profiles span").css("display", "inline");
@@ -32,6 +47,7 @@
 			$("#coursebox h1, #coursesUndertaken").css("display", "block");
 			$("#courseDrop").css("display", "none");
 			$("#coursebox").css("padding", "30px 150px");
+			$("#introbox #introPic").css("width", "30%")
 		}
 	}
 	$(window).resize(widthView);

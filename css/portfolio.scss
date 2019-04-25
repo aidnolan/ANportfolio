@@ -29,6 +29,14 @@ $alt-color-theme: royalblue;
 	}
 }
 
+.hiddenProfile {
+	display: none;
+}
+
+#expandProfile {
+	cursor: pointer;
+}
+
 i {
 	font-size: 60px;
 	&.fa-home {
@@ -129,10 +137,11 @@ nav.navbar {
 					
 			}
 			#introPic {
-				@include border-radius(20%)
+				@include border-radius(20%);				
 			}
 			.col-xs-12:first-of-type {
 				margin-bottom: 20px;
+
 			}
 			.row {
 				margin: 10px 20px;
@@ -240,7 +249,7 @@ nav.navbar {
 					transform: perspective(600px) rotateX(-38deg);
 					margin: 0 33.3vw;
 					#subTitleProj {
-						font-size: 3vw;
+						font-size: 2.8vw;
 						
 					}
 					
