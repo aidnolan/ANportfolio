@@ -37,7 +37,8 @@
 			$("#courseDrop").css("display", "block");
 			$("#coursebox").css("padding", "10px 20px");
 			$(".carousel-capt").attr("id", "smallCapt");
-			$("#introbox #introPic").css("width", "45%")
+			$("#introbox #introPic").css("width", "45%");
+			$("#titlebox").css("background-attachment", "local");
 
 		} else {
 			$(".profiles span").css("display", "inline");
@@ -47,7 +48,8 @@
 			$("#coursebox h1, #coursesUndertaken").css("display", "block");
 			$("#courseDrop").css("display", "none");
 			$("#coursebox").css("padding", "30px 150px");
-			$("#introbox #introPic").css("width", "30%")
+			$("#introbox #introPic").css("width", "30%");
+			$("#titlebox").css("background-attachment", "fixed");
 		}
 	}
 	$(window).resize(widthView);
