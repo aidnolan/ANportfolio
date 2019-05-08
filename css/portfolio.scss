@@ -1,3 +1,8 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 $color-theme: rgba(151,178,226, 1);
 $alt-color-theme: royalblue;
 
@@ -24,8 +29,14 @@ $alt-color-theme: royalblue;
 
 @media only screen and (max-device-width: 1024px) {
 	.container.box#titlebox {
-		background-attachment: scroll;
+		background-attachment: fixed;
 		
+	}
+}
+
+@media only screen and (max-device-width: 600px) {
+	.container.box#titlebox {
+		background-attachment: local;
 	}
 }
 
@@ -94,11 +105,11 @@ nav.navbar {
 		&#titlebox {
 			box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4);
 			background-image: url("../images/macKeyboard.jpg");		
-	    	background-attachment: fixed;
-	    	background-position: center;
-	    	padding-top: 15vw;
-	    	height: 54vw;
-	    	color: white ;
+			// background-attachment: fixed;
+			background-position: center;
+			padding-top: 15vw;
+			height: 54vw;
+			color: white ;
 			text-shadow: 5px 5px rgba(0,0,0,0.6);
 	    	&.page-header {
 				margin-bottom: 0;
@@ -240,7 +251,7 @@ nav.navbar {
 				position: absolute;
 				z-index: 400;
 				background-image: url("../images/project-cover.jpg");
-				background-size: 100% 100%;
+				@include background-size(100% 100%);
 				font-size: 5vw;
 				text-align: center;
 				text-shadow: 2px 2px rgba(10,10,300, 0.4);
