@@ -34,7 +34,7 @@ $alt-color-theme: royalblue;
 	}
 }
 
-@media only screen and (max-device-width: 600px) {
+@media only screen and (max-device-width: 900px) {
 	.container.box#titlebox {
 		background-attachment: local;
 	}
@@ -87,7 +87,7 @@ nav.navbar {
 }
 
 .container {
-	font-family: "Raleway";
+	font-family: "Raleway", helvetica, sans-serif;
 	&#nav-adjust {
 		margin:0;
 	}
@@ -281,7 +281,7 @@ nav.navbar {
 
 		&#coursebox {
 			
-			font-family: 'Raleway', helvetica;
+			font-family: 'Raleway', helvetica, sans-serif;
 			font-size: 25px;
 			background-color: rgba(151,178,226, 1);
 			padding: 30px 150px;

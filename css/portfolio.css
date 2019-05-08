@@ -14,7 +14,7 @@
     background-attachment: fixed;
   }
 }
-@media only screen and (max-device-width: 600px) {
+@media only screen and (max-device-width: 900px) {
   .container.box#titlebox {
     background-attachment: local;
   }
@@ -68,7 +68,7 @@ nav.navbar .navbar-nav a:hover {
 }
 
 .container {
-  font-family: "Raleway";
+  font-family: "Raleway", helvetica, sans-serif;
 }
 .container#nav-adjust {
   margin: 0;
@@ -246,7 +246,7 @@ nav.navbar .navbar-nav a:hover {
   font-size: 0.5vw;
 }
 .container.box#coursebox {
-  font-family: "Raleway", helvetica;
+  font-family: "Raleway", helvetica, sans-serif;
   font-size: 25px;
   background-color: #97b2e2;
   padding: 30px 150px;
