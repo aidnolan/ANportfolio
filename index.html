@@ -6,7 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="css/portfolio.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway|Righteous" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 		<title>A. Nolan Portfolio</title>
 	</head>
@@ -54,11 +54,12 @@
 					</div>
 					<div class="clearfix"></div>
 					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<img id="introPic" src="images/profpic.jpg">
 						</div>
-						<div id="introPara" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-							<p>My name is Aidan Nolan and I'm a self-taught Web Developer based in London, England who is immediately available for permanent roles in Frontend Web Development</p>
+						<div id="introPara" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right">
+							<p>My name is Aidan Nolan and I'm a self-taught Web Developer based in London, England who is immediately available for permanent roles in Web Development.</p>
+							<p></p>
 							
 							<p class="hiddenProfile">I began studying coding intensively in early 2017 and it didn't take long to realise that this is where my passion lies. I have learnt a lot over the past two years and I'm eager to start in a professional role to show what I can contribute.</p>
 							
@@ -79,7 +80,7 @@
 				<!-- Technical Skills -->
 				<div id="skillbox" class="container box text-center">
 					<div class="row">
-						<div class="col-sm-12 col-xs-12" tabindex="8"><h2>Skills</h2></div>
+						<div class="col-sm-12 col-xs-12" tabindex="8"><h1>Skills</h1></div>
 					</div>
 					<div class="row">
 						<div class="col-sm-2 col-xs-4">
@@ -129,236 +130,149 @@
 
 			<section>
 				<div id="projectbox" class="container text-center box">
-					<h2>Projects</h2>
+					<h1>Projects</h1>
 					<div class="row vertical-align">
 						<div class="projectItem">
 							<div>
 								<h3>Pomodoro Clock</h3>
-								<img class="projectPic" src="images/pomo.png" alt="Screen capture of Pomodoro Clock App">
-								<p>This clock is based on the Pomodoro Technique and allows the user to set their Work Time and Break Time. The clock alternates between the two timers automatically, as the respective timer reaches 00:00<br>(Click timer face to alternate manually)</p>
+								<a href="ProjectFiles/pomodoro/index.html">
+									<img class="projectPic" src="images/pomo.png" alt="Screen capture of Pomodoro Clock App">
+								</a>
+								<p>This clock is based on the Pomodoro Technique and allows the user to set their Work Time and Break Time. The clock alternates between the two timers automatically</p>
 							</div>
-							<div class="buttonContainer">
-								<button class="projectButton">
-									<a href="ProjectFiles/pomodoro/index.html" target="_blank">Visit Page</a>
-								</button>
-								<button class="projectButton">
-									<a href="https://github.com/aidnolan/pomodoro/" target="_blank">View Code</a>
-								</button>
+							<div>
+								<form action="ProjectFiles/pomodoro/index.html" method="GET" target="_blank">
+									<button class="projectButton">
+										Visit Page
+									</button>
+								</form>
+								<form action="https://github.com/aidnolan/pomodoro/" method="GET" target="_blank">
+									<button class="projectButton">
+										View Code
+									</button>
+								</form>
 							</div>
 						</div>
 						<div class="projectItem">
 							<div>
 								<h3>JS Calculator</h3>
-								<img class="projectPic" src="images/javaCalc.png" alt="Screen capture of JS Calculator App">
+								<a href="ProjectFiles/JScalculator/index.html">
+									<img class="projectPic" src="images/javaCalc.png" alt="Screen capture of JS Calculator App">	
+								</a>
 								<p>A functional calculator with mini update display. Lovingly crafted using JavaScript, CSS3 and HTML5</p>
 							</div>
-								
-							<div class="buttonContainer">
-								<button class="projectButton">
-									<a href="ProjectFiles/JScalculator/index.html" target="_blank">Visit Page</a></button>
-								<button class="projectButton">
-									<a href="https://github.com/aidnolan/java-calculator/" target="_blank">View Code</a>
-								</button>
+							<div>
+								<form action="ProjectFiles/JScalculator/index.html" method="GET" target="_blank">
+									<button class="projectButton">
+										Visit Page
+									</button>
+								</form>
+								<form action="https://github.com/aidnolan/java-calculator/" method="GET" target="_blank">
+									<button class="projectButton">
+										View Code
+									</button>
+								</form>
 							</div>
 						</div>
 						<div class="projectItem">
 							<div>
 								<h3>RESTful Routing Demo</h3>
-								<img class="projectPic" src="images/RESTfulRoutingDemo.png" alt="Screen capture of RESTful Routing App">
+								<a href="https://murmuring-brushlands-12385.herokuapp.com/players">
+									<img class="projectPic" src="images/RESTfulRoutingDemo.png" alt="Screen capture of RESTful Routing App">
+								</a>
 								<p>This is a functional demonstration of RESTful routing, allowing users to create, review, update or delete player profiles in the app</p>	
 							</div>
-							<div class="buttonContainer">
-								<button class="projectButton">
-									<a href="https://murmuring-brushlands-12385.herokuapp.com/players" target="_blank">Visit Page</a></button>
-								<button class="projectButton">
-									<a href="https://github.com/aidnolan/LfcPlayersApp" target="_blank">View Code</a>
-								</button>
+							<div>
+								<form action="https://murmuring-brushlands-12385.herokuapp.com/players" method="GET" target="_blank">
+									<button class="projectButton">
+										Visit Page
+									</button>
+								</form>
+								<form action="https://github.com/aidnolan/LfcPlayersApp" method="GET" target="_blank">
+									<button class="projectButton">
+										View Code
+									</button>
+								</form>
 							</div>
 						</div>
 						<div class="projectItem">
 							<div>
 								<h3> Weather API App</h3>
-								<img class="projectPic" src="images/weather-app.jpeg" alt="Screen capture of Weather App">
-								<p>App utilising Open Weather API and React.js to display current weather in multiple cities. Work to improve the style and add new features is ongoing</p>
+								<a href="https://weather-app83.herokuapp.com/" target="_blank">
+									<img class="projectPic" src="images/weather-app.jpeg" alt="Screen capture of Weather App">
+								</a>
+								<p>App utilising Open Weather API and React.js to display current weather in multiple cities</p>
 							</div>
-							
-							<div class="buttonContainer">
-								<button class="projectButton">
-									<a href="https://weather-app83.herokuapp.com/" target="_blank">Visit Page</a>
-								</button>
-								<button class="projectButton">
-									<a href="https://github.com/aidnolan/weather-app/" target="_blank">View Code</a>
-								</button>
-							</div> 
+							<div>
+								<form action="https://weather-app83.herokuapp.com/" method="GET" target="_blank">
+									<button class="projectButton">
+										Visit Page
+									</button>
+								</form>
+								<form action="https://github.com/aidnolan/weather-app/" method="GET" target="_blank">
+									<button class="projectButton">
+										View Code
+									</button>
+								</form>
+							</div>
 						</div>
 						<div class="projectItem">
 							<div>
 								<h3>Patatap Clone</h3>
-								<img class="projectPic" src="images/patatap.png" alt="Screen capture of Patatap App">
-								<p>This is a fun page that allows the user to play different sounds and display ramdomly sized, coloured and located circles by pressing keyboard keys (A-Z only). The sound emitted is unique to the key pressed</p>
+								<a href="ProjectFiles/PatatapClone/index.html" target="_blank">
+									<img class="projectPic" src="images/patatap.png" alt="Screen capture of Patatap App">
+								</a>
+								<p>This is a fun page that allows the user to play different sounds and display ramdomly sized, coloured and located circles by pressing keyboard keys<br>(A-Z only)</p>
 							</div>
-							<div class="buttonContainer">
-								<button class="projectButton">
-									<a href="ProjectFiles/PatatapClone/index.html" target="_blank">Visit Page</a>
-								</button>
-								<button class="projectButton">
-									<a href="https://github.com/aidnolan/patatapClone/" target="_blank">View Code</a>
-								</button>
-							</div>
-						</div>
-						<div class="projectItem">
-							<h3>Shopping Basket App</h3>
-							<img class="projectPic" src="images/shoppingBasket.jpg" alt="Screen capture of Shopping Basket App">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum obcaecati amet repellat illum officia quaerat, consequatur dolor architecto dolore tempora nostrum laboriosam totam quod ullam quasi, repudiandae sit illo nisi.</p>
-							<div class="buttonContainer">
-								<button class="projectButton">
-									<a href="ProjectFiles/PatatapClone/index.html" target="_blank">Visit Page</a>
-								</button>
-								<button class="projectButton">
-									<a href="https://github.com/aidnolan/patatapClone/" target="_blank">View Code</a>
-								</button>
+							<div>
+								<form action="ProjectFiles/PatatapClone/index.html" method="GET" target="_blank">
+									<button class="projectButton">
+										Visit Page
+									</button>
+								</form>
+								<form action="https://github.com/aidnolan/patatapClone/" method="GET" target="_blank">
+									<button class="projectButton">
+										View Code
+									</button>
+								</form>
 							</div>
 						</div>
-					</div>
-					
-				</div>
-				<!-- Projects Completed -->
-				<!-- <div id="projectbox" class="container text-center box">
-					<div id="projectcover">
-						<div id="projectcovertext">
-							<span id="coverClickArea" tabindex="9">
-								Projects
-								<div id="subTitleProj">(Please Click To Reveal)</div>
-							</span>
-						</div>
-					</div>
-					<div id="theCarousel" class="carousel slide">
-						<ol class="carousel-indicators">
-							<li data-target="#theCarousel" data-slide-to="0" class="active"></li>
-							<li data-target="#theCarousel" data-slide-to="1"></li>
-							<li data-target="#theCarousel" data-slide-to="2"></li>
-							<li data-target="#theCarousel" data-slide-to="3"></li>
-							<li data-target="#theCarousel" data-slide-to="4"></li> -->
-							<!-- <li data-target="#theCarousel" data-slide-to="5"></li>	 -->
-						<!-- </ol>
-						<div class="clearfix"></div>
-						<div class="carousel-inner">
-							<div class="item carouselHeight active">
-								<img class="" src="images/pomo.png" alt="Screen capture of Pomodoro Clock App">
-								<div class="slide1"></div>
-								<div class="carousel-capt">
-									<div class="visible">
-										<h2>Pomodoro Clock</h2>
-										<p>This clock is based on the Pomodoro Technique and allows the user to set their Work Time and Break Time. The clock alternates between the two timers automatically, as the respective timer reaches 00:00<br>(Click timer face to alternate manually)</p>
-										<div>
-											<button class="projectButton">
-												<a href="ProjectFiles/pomodoro/index.html" target="_blank">Visit Page</a>
-											</button>
-											<button class="projectButton">
-												<a href="https://github.com/aidnolan/pomodoro/" target="_blank">View Code</a>
-											</button>
-										</div> 
-									</div>
-								</div>	
+						<div class="projectItem" id="firstItem">
+							<div>
+								<h3>Shopping Basket App</h3>
+								<a href="https://shopping-basket-anolan.herokuapp.com/">
+									<img class="projectPic" src="images/shoppingBasket.jpg" alt="Screen capture of Shopping Basket App">
+								</a>
+								<p>Mock-up of online retail Shopping Basket created using React. Single Page Application that calculates sales and import tax, where applicable, totals cost and allows users to checkout</p>
 							</div>
-			
-							<div class="item carouselHeight">
-								<img class="" src="images/javaCalc.png" alt="Screen capture of JS Calculator App">
-								<div class="slide2"></div>
-								<div class="carousel-capt">
-									<div class="visible col-xs-12">
-										<h2>Javascript Calculator</h2>
-										<p>A functional calculator with mini update display. Lovingly crafted using JavaScript, CSS3 and HTML5</p>	
-										<div>
-											<button class="projectButton">
-												<a href="ProjectFiles/JScalculator/index.html" target="_blank">Visit Page</a></button>
-											<button class="projectButton">
-												<a href="https://github.com/aidnolan/java-calculator/" target="_blank">View Code</a>
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-			
-							<div class="item carouselHeight">
-								<img class="" src="images/RESTfulRoutingDemo.png" alt="Screen capture of RESTful Routing App">
-								<div class="slide2"></div>
-								<div class="carousel-capt">
-									<div class="visible col-xs-12">
-										<h2>RESTful Routing Demo - LFC Legend App</h2>
-										<p>This is a demonstration of the usefulness of RESTful routing, allowing users to create, review, update or delete player profiles in the app</p>	
-										<div>
-											<button class="projectButton">
-												<a href="https://murmuring-brushlands-12385.herokuapp.com/players" target="_blank">Visit Page</a></button>
-											<button class="projectButton">
-												<a href="https://github.com/aidnolan/LfcPlayersApp" target="_blank">View Code</a>
-											</button>
-										</div>
-									</div>
-								</div>
+							<div>
+								<form action="https://shopping-basket-anolan.herokuapp.com/" method="GET" target="_blank">
+									<button class="projectButton">
+										Visit Page
+									</button>
+								</form>
+								<form action="https://github.com/aidnolan/shopping-basket/" method="GET" target="_blank">
+									<button class="projectButton">
+										View Code
+									</button>
+								</form>
 							</div>
 							
-							<div class="item carouselHeight">
-								<img class="" src="images/weather-app.jpeg" alt="Screen capture of Weather App">
-								<div class="slide1"></div>
-								<div class="carousel-capt">
-									<div class="visible">
-										<h2> Weather API React App (Work-in-progress)</h2>
-										<p>App utilising Open Weather API and React.js to display current weather in multiple cities. Work to improve the style and add new features is ongoing</p>
-										<div>
-											<button class="projectButton">
-												<a href="https://weather-app83.herokuapp.com/" target="_blank">Visit Page</a>
-											</button>
-											<button class="projectButton">
-												<a href="https://github.com/aidnolan/weather-app/" target="_blank">View Code</a>
-											</button>
-										</div> 
-									</div>
-								</div>	
-							</div>
-			
-							<div class="item carouselHeight">
-								<img class="" src="images/patatap.png" alt="Screen capture of Patatap App">
-								<div class="slide3">
-						
-								</div>
-								<div class="carousel-capt">
-									<div class="">	
-										<h2>Patatap Clone</h2>
-										<p>This is a fun page that allows the user to play different sounds and display ramdomly sized, coloured and located circles by pressing keyboard keys (A-Z only). The sound emitted is unique to the key pressed</p>
-										<div class="">
-											<button class="projectButton">
-												<a href="ProjectFiles/PatatapClone/index.html" target="_blank">Visit Page</a>
-											</button>
-											<button class="projectButton">
-												<a href="https://github.com/aidnolan/patatapClone/" target="_blank">View Code</a>
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
 						</div>
-						<a class="left carousel-control" href="#theCarousel" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left"></span>
-						</a>
-			
-						<a class="right carousel-control" href="#theCarousel" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right"></span>
-						</a>
 					</div>
-				</div> -->
+				</div>
 			</section>
 
 			<section>
 				<!-- Courses Completed and in-progress -->
 				<div id="coursebox" class="container text-center box">
 					<div class="row">
-						<h1>Courses Completed and In-Progress</h1>
-						<div class="col-xs-12">	
-							<div id="courseDrop" class="dropdown">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">	
+							<h1>Courses Completed and In-Progress</h1>
+							<!-- <div id="courseDrop" class="dropdown col-xs-12"> -->
 								
 								<!-- Alternate dropdown for smaller browser windows -->
-								<button id="courseButton" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+								<!-- <button id="courseButton" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
 									Courses Completed and In-Progress <span class="caret"></span>
 								</button>
 								<ul class="dropdown-menu">
@@ -384,7 +298,7 @@
 										<a href="https://www.codecademy.com/catalog/subject/web-development" target="_blank"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Codecademy Exercises</a>
 									</li>
 								</ul>
-							</div>
+							</div> -->
 
 							<!-- Display for expanded browser windows -->
 							<ul id="coursesUndertaken">
@@ -412,8 +326,21 @@
 								</li>
 							</ul>
 						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+								<div id="certificateContainer">
+									<h1>Certificates</h1>
+									<a href="images/WebDev Bootcamp Certificate.JPG" target="_blank">
+										<img class="certificates" src="images/WebDev Bootcamp Certificate.JPG" alt="Web developer bootcamp completion certificate"/></a>
+									<br>
+									<a href="https://www.freecodecamp.org/certification/aidnolan/javascript-algorithms-and-data-structures" target="_blank">
+										<img class="certificates" src="images/freeCodeCamp_JS_Certificate.JPG" alt="Free Code Camp JavaScript algorithms and data structures certificate">
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
+					
+						
 			</section>
 
 			<section>

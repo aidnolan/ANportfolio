@@ -17,7 +17,7 @@ nav.navbar {
   width: 100%;
   background-color: #97b2e2;
   z-index: 500;
-  border: 1px solid black;
+  border: 1px solid #97b2e2;
   float: left;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -34,11 +34,12 @@ nav.navbar .navbar-brand {
 }
 nav.navbar .navbar-nav a {
   color: black;
-  font-weight: bold;
   width: 100px;
   text-align: center;
+  font-family: "Righteous";
 }
 nav.navbar .navbar-nav a:hover {
+  transition: 1s;
   background-color: rgba(151, 178, 226, 0.78);
 }
 
@@ -60,6 +61,10 @@ i.fa-home {
 .container {
   font-family: "Raleway", helvetica, sans-serif;
 }
+.container h1 {
+  font-family: "Righteous", "Raleway", helvetica, sans-serif;
+  font-size: 30px;
+}
 .container#nav-adjust {
   margin: 0;
 }
@@ -73,6 +78,9 @@ i.fa-home {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.container.box .row {
+  margin: 0;
 }
 .container.box#titlebox {
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
@@ -89,6 +97,7 @@ i.fa-home {
 }
 .container.box#titlebox h1 {
   font-size: 8vw;
+  font-family: "Raleway", Helvetica, sans-serif;
 }
 .container.box#titlebox .row {
   margin: 0;
@@ -97,25 +106,22 @@ i.fa-home {
   color: black;
   font-size: 2em;
   font-size: 20px;
-  padding: 30px 0;
+  padding: 30px 40px;
 }
 .container.box#introbox p {
   text-align: left;
   font-size: 18px;
 }
 .container.box#introbox #introPara {
-  padding: 5px 40px;
-}
-.container.box#introbox img {
-  width: 350px;
-  /*@include border-radius(5%);*/
-  border: 1px solid blue;
+  padding: 5px 10%;
+  text-align: center;
 }
 .container.box#introbox #introPic {
   -webkit-border-radius: 20%;
   -moz-border-radius: 20%;
   -ms-border-radius: 20%;
   border-radius: 20%;
+  border: 3px solid #97b2e2;
 }
 .container.box#introbox .col-xs-12:first-of-type {
   margin-bottom: 20px;
@@ -138,11 +144,9 @@ i.fa-home {
 .container.box#projectbox {
   background-image: url("../images/bgroundimg.jpg");
   padding: 40px 0;
-  /*.thumbnail h2 a {
-  	/*color: black;*/
-  /*font-size: 4vw;*/
-  /*padding: 0;*/
-  /*}*/
+}
+.container.box#projectbox h1 {
+  font-family: "Righteous", "Raleway", cursive;
 }
 .container.box#projectbox .vertical-align {
   display: flex;
@@ -160,10 +164,21 @@ i.fa-home {
   position: relative;
   display: flex;
   flex-direction: column;
+  font-size: 18px;
+  text-align: center;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   border-radius: 15px;
+}
+.container.box#projectbox .projectItem h3 {
+  font-family: "Righteous", "Raleway", cursive;
+}
+.container.box#projectbox .projectItem form {
+  display: inline;
+}
+.container.box#projectbox .projectItem p {
+  padding: 10px 5px;
 }
 .container.box#projectbox .projectItem .projectPic {
   height: 150px;
@@ -173,10 +188,11 @@ i.fa-home {
 }
 .container.box#projectbox .projectItem .projectButton {
   justify-content: flex-end;
+  flex-wrap: nowrap;
   background-color: #97b2e2;
   font-size: 20px;
-  padding: 0px 10px;
-  margin: 0;
+  padding: 5px 10px;
+  margin: 0 5px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
@@ -187,15 +203,17 @@ i.fa-home {
   -webkit-appearance: none;
   text-decoration: none;
 }
-.container.box#projectbox .projectItem a {
-  color: white;
-  text-decoration: none;
-}
 .container.box#projectbox .projectItem .projectButton:active {
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
-.container.box#projectbox .projectItem a:active {
+.container.box#projectbox .projectItem .projectButton:hover {
   color: black;
+}
+.container.box#projectbox .projectItem .projectButton:focus {
+  outline: 0;
+}
+.container.box#projectbox .projectItem#firstItem {
+  order: -1;
 }
 .container.box#projectbox #projectcover {
   color: white;
@@ -232,7 +250,7 @@ i.fa-home {
   font-family: "Raleway", helvetica, sans-serif;
   font-size: 25px;
   background-color: #97b2e2;
-  padding: 30px 150px;
+  padding: 60px 150px;
   text-align: left;
 }
 .container.box#coursebox .dropdown-menu {
@@ -242,30 +260,20 @@ i.fa-home {
 .container.box#coursebox .dropdown-menu a {
   white-space: normal;
 }
-.container.box#coursebox #courseDrop {
-  display: none;
-  text-align: center;
-  margin: 30px 0;
-}
-.container.box#coursebox #courseDrop li {
-  padding: 0;
-}
-.container.box#coursebox #courseDrop li a {
-  width: 100%;
-}
-.container.box#coursebox #courseDrop a {
-  color: black;
-  text-decoration: none;
-}
-.container.box#coursebox #courseDrop a:hover {
-  color: black;
-}
 .container.box#coursebox #coursesUndertaken {
   padding: 0px;
 }
 .container.box#coursebox #courseButton {
   font-size: 15px;
   width: 100%;
+}
+.container.box#coursebox #certificateContainer {
+  display: block;
+  text-align: center;
+}
+.container.box#coursebox .certificates {
+  padding: 10px;
+  width: 300px;
 }
 .container.box#coursebox i {
   padding-right: 10px;
@@ -320,9 +328,6 @@ i.fa-home {
   padding: 20px 0 20px 0;
   font-size: 18px;
   text-align: right;
-  /*.float {
-  	float: left;
-  }*/
 }
 .container.box#formbox .profiles img {
   padding-right: 20px;

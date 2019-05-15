@@ -35,7 +35,7 @@ nav.navbar {
 	width: 100%;
 	background-color: $color-theme;
 	z-index: 500;
-	border: 1px solid black;
+	border: 1px solid $color-theme;
 	float: left;
 	@include border-radius(0);
 	#end-nav {
@@ -49,10 +49,12 @@ nav.navbar {
 
 	.navbar-nav a {
 		color: black;
-		font-weight: bold;
+		// font-weight: bold;
 		width: 100px;
 		text-align: center;
+		font-family: 'Righteous';
 		&:hover {
+			transition: 1s;
 			background-color: rgba(151,178,226, 0.78);;
 		}
 	}
@@ -74,7 +76,11 @@ i {
 }
 
 .container {
-	font-family: "Raleway", helvetica, sans-serif;
+	font-family: 'Raleway', helvetica, sans-serif;
+	h1 {
+		font-family: 'Righteous','Raleway', helvetica, sans-serif;
+		font-size: 30px;
+	}
 	&#nav-adjust {
 		margin:0;
 	}
@@ -83,10 +89,13 @@ i {
 		
 		width: 100%;
 		position: relative;
-	    background-attachment: fixed;
-	    background-position: center;
-	    background-repeat: no-repeat;
-	    @include background-size(cover);
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+		@include background-size(cover);
+		.row{
+			margin: 0;
+		}	
 	    
 	    
 		&#titlebox {
@@ -102,7 +111,8 @@ i {
 				margin-bottom: 0;
 	    	}
 	    	h1 {
-	    		font-size: 8vw;
+					font-size: 8vw;
+					font-family: 'Raleway', Helvetica, sans-serif
 	    	}
 	    	.row {
 	    		margin: 0;
@@ -118,7 +128,7 @@ i {
 			color: black;
 			font-size: 2em;
 			font-size: 20px;
-			padding: 30px 0;
+			padding: 30px 40px;
 			p {
 				text-align: left;
 				font-size: 18px;
@@ -126,21 +136,20 @@ i {
 			}
 
 			#introPara {
-				padding: 5px 40px;
+				padding: 5px 10%;
+				text-align: center;
 			}
-			img {
-				width: 350px;
-				/*@include border-radius(5%);*/
-				border: 1px solid blue;
-					
-			}
+			
 			#introPic {
-				@include border-radius(20%);				
+				@include border-radius(20%);
+				border: 3px solid $color-theme;			
 			}
+
 			.col-xs-12:first-of-type {
 				margin-bottom: 20px;
 
 			}
+
 			.row {
 				margin: 10px 20px;
 			}
@@ -152,9 +161,11 @@ i {
 			padding-top: 40px;
 			padding-bottom: 50px;
 			margin-bottom: 0;
+
 			.row:first-of-type {
 				margin-bottom: 10px;
 			}
+
 			.col-xs-4 {
 				margin-bottom: 20px;
 			}
@@ -162,9 +173,11 @@ i {
 		}
 
 		&#projectbox {
-			
 			background-image: url("../images/bgroundimg.jpg");
 			padding: 40px 0;
+			h1 {
+				font-family: 'Righteous', 'Raleway', cursive;
+			}
 			.vertical-align {
 				display: flex;
 				align-items: stretch;
@@ -176,16 +189,29 @@ i {
 			.projectItem {
 				justify-content: space-between;
 				width: 300px;
-				// height: 300px;
 				background-color: rgba(150, 100, 200, 0.9);
-				// background-image: url("../images/javaCalc.png");
 				margin: 15px;
 				padding: 20px;
 				color: white;
 				position: relative;
 				display: flex;
 				flex-direction: column;
+				font-size: 18px;
+				text-align: center;
 				@include border-radius(15px);
+
+				h3 {
+					font-family: 'Righteous', 'Raleway', cursive;
+				}
+
+				form {
+						display: inline;
+				}
+
+				p {
+					padding: 10px 5px;
+				}
+
 				.projectPic {
 					height: 150px;
 					width: 100%;
@@ -194,96 +220,33 @@ i {
 				}
 
 				.projectButton {
-							justify-content: flex-end;
-							// display: flex;
-							background-color: $color-theme;
-							font-size: 20px;
-							padding: 0px 10px;
-							margin: 0;
-							@include border-radius(15px);
-							box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
-							color: white;
-							border: none;
-							-webkit-appearance: none;
-							text-decoration: none;
-							}
-							a {
-								color: white;
-								text-decoration: none;
-							}
-					    .projectButton:active {
-								box-shadow: 3px 3px 3px rgba(0,0,0,0.8);
-								
-							}		
-							a:active {
-								color: black
-							}
+					justify-content: flex-end;
+					flex-wrap: nowrap;
+					background-color: $color-theme;
+					font-size: 20px;
+					padding: 5px 10px;
+					margin: 0 5px;
+					@include border-radius(15px);
+					box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+					color: white;
+					border: none;
+					-webkit-appearance: none;
+					text-decoration: none;
+					&:active {
+						box-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+					}
+					&:hover {
+						color: black;
+					}
+					&:focus {
+						outline: 0;
+					}
+				}
 			}
 
-			// .carousel-capt {
-			// 	display: none;
-			// 	#smallCapt {
-			// 		display: block;
-			// 	}
-			// }
-			
-			// .carouselHeight img:hover ~ .carousel-capt {
-			// 	display: block;	
-			// }
-
-			// .carousel-capt:hover{
-			// 	display: block;
-			// }
-
-			// .carouselHeight img {
-			// 	height: 50vw;
-			// 	width: auto;
-			// 	margin: auto;
-			// }
-
-			// .carousel-capt {
-			// 	background-color: rgba(235,239,245, 0.8);
-			// 	font-size: 2vw;
-			// 	position: absolute;
-			//     right: 15%;
-			//     bottom: 10vw;
-			//     left: 15%;
-			//     z-index: 10;
-			//     padding: 0px 20px 20px 20px;
-			//     /*padding-bottom: 20px;*/
-			//     color: #fff;
-			//     text-align: center;
-			//     /*text-shadow: 0 1px 2px rgba(0,0,0,0.6);*/
-			//     @include border-radius(10px);
-			//     h2 {
-			//     	font-size: 3vw;
-			//     }
-			//     a, p, h2 {
-			//     	color: black;
-			//     	text-decoration: none;
-			//     }
-			//     .projectButton {
-			//     	/*background-color: $color-theme;*/
-			// 		height: 4vw;
-			// 		font-size: 1.8vw;
-			// 		padding: 0.3vw 0.5vw;
-			// 		margin: 0vw 1vw;
-			// 		@include border-radius(1.5vw);
-			// 		box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
-			// 		color: white;
-			// 		background-color: white;
-			// 		-webkit-appearance: none;
-			//     }
-			//     .projectButton:active {
-			// 		box-shadow: 3px 3px 3px rgba(0,0,0,1);
-			//     }
-			
-
-			/*.thumbnail h2 a {
-				/*color: black;*/
-				/*font-size: 4vw;*/
-				/*padding: 0;*/
-			/*}*/
+			.projectItem#firstItem {
+				order: -1
+			}
 
 			#projectcover {
 				color: white;
@@ -325,7 +288,7 @@ i {
 			font-family: 'Raleway', helvetica, sans-serif;
 			font-size: 25px;
 			background-color: rgba(151,178,226, 1);
-			padding: 30px 150px;
+			padding: 60px 150px;
 			text-align: left;
 			
 			.dropdown-menu {
@@ -336,24 +299,25 @@ i {
 				}
 			}
 
-			#courseDrop {
-				display: none;
-				text-align: center;
-				margin: 30px 0;
-				li {
-					padding: 0;
-					a {
-						width: 100%;
-					}
-				}
-				a {
-					color: black;
-					text-decoration: none;
-					&:hover {
-						color: black;
-					}
-				}
-			}
+			// #courseDrop {
+			// 	display: none;
+			// 	text-align: center;
+			// 	margin: 30px 0;
+			// 	padding: 30px 0 0 0;
+			// 	li {
+			// 		padding: 0;
+			// 		a {
+			// 			width: 100%;
+			// 		}
+			// 	}
+			// 	a {
+			// 		color: black;
+			// 		text-decoration: none;
+			// 		&:hover {
+			// 			color: black;
+			// 		}
+			// 	}
+			// }
 			
 			#coursesUndertaken {
 				padding: 0px;
@@ -364,7 +328,15 @@ i {
 				width: 100%;
 			}
 
-			
+			#certificateContainer {
+				display: block;
+				text-align: center;
+			}
+			.certificates {
+				padding: 10px;
+				width: 300px;
+			}
+
 			i {
 				padding-right: 10px;
 			}
@@ -433,14 +405,12 @@ i {
 				font-size: 18px;
 				text-align: right;
 
-				/*.float {
-					float: left;
-				}*/
 				img {
 					padding-right: 20px;
 					height: 48px;
 					width: 70px;
 				}
+				
 				a {
 					position: relative;
 					top: 3px;

@@ -33,8 +33,8 @@
 			$(".navbar-nav a").css("width", "100%");
 			$("#myForm").insertBefore($("#mySocial"));
 			$("#mySocial").css("padding","20px 0 20px 0");
-			$("#coursebox h1, #coursesUndertaken").css("display", "none");
-			$("#courseDrop").css("display", "block");
+			$("#coursesUndertaken").css("font-size", "16px");
+			$("#courseDrop").css("display", "none");
 			$("#coursebox").css("padding", "10px 20px");
 			$(".carousel-capt").attr("id", "smallCapt");
 			$("#introbox #introPic").css("width", "45%");
@@ -45,7 +45,7 @@
 			$("#formbox .profiles").css("textAlign","left");
 			$(".navbar-nav a").css("width", "100px");
 			$("#mySocial").insertBefore($("#myForm"));
-			$("#coursebox h1, #coursesUndertaken").css("display", "block");
+			$("#coursesUndertaken").css("font-size", "25px");
 			$("#courseDrop").css("display", "none");
 			$("#coursebox").css("padding", "30px 150px");
 			$("#introbox #introPic").css("width", "30%");
@@ -53,23 +53,9 @@
 		}
 	}
 	$(window).resize(widthView);
-		
-	// Functionality for Projects carousel and caption box re: visibility
-	$(".carouselHeight img, .carousel-capt, ol.carousel-indicators").on("mouseenter", function(){
-		$(".carousel-capt").css("display", "block");
-	});
-	
-	$(".carouselHeight img").on("mouseleave", function(){
-		$(".carousel-capt").css("display", "none");
-	});
 
-	$("#coursebox, #skillbox, .carousel-control").on("mouseenter", function(){
-		$(".carousel-capt").css("display", "none");
-	});
-
-	$("#coverClickArea").on("click", function(){
-		$("#projectcover").fadeOut("slow", function(){});
-		$('.carousel').carousel(); 
+	$('.nav a').on('click', function(){
+		$('.navbar-toggle').click();
 	});
 
 	$("textarea").on("keyup", function(){
