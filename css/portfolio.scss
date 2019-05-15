@@ -174,7 +174,8 @@ i {
 
 		&#projectbox {
 			background-image: url("../images/bgroundimg.jpg");
-			background-position: center;
+			background-repeat: repeat-y;
+			width: 100%;
 			padding: 40px 0;
 			h1 {
 				font-family: 'Righteous', 'Raleway', cursive;
@@ -245,44 +246,44 @@ i {
 				}
 			}
 
-			.projectItem#firstItem {
-				order: -1
-			}
+			// .projectItem#firstItem {
+			// 	order: -1
+			// }
 
-			#projectcover {
-				color: white;
-				padding-top: 9.8vw;
-				width: 100%;
-				height: 100%;
-				position: absolute;
-				z-index: 400;
-				background-image: url("../images/project-cover.jpg");
-				@include background-size(100% 100%);
-				font-size: 5vw;
-				text-align: center;
-				text-shadow: 2px 2px rgba(10,10,300, 0.4);
+			// #projectcover {
+			// 	color: white;
+			// 	padding-top: 9.8vw;
+			// 	width: 100%;
+			// 	height: 100%;
+			// 	position: absolute;
+			// 	z-index: 400;
+			// 	background-image: url("../images/project-cover.jpg");
+			// 	@include background-size(100% 100%);
+			// 	font-size: 5vw;
+			// 	text-align: center;
+			// 	text-shadow: 2px 2px rgba(10,10,300, 0.4);
 
-				#projectcovertext {
-					transform: perspective(600px) rotateX(-38deg);
-					margin: 0 33.3vw;
-					#subTitleProj {
-						font-size: 2.8vw;
+			// 	#projectcovertext {
+			// 		transform: perspective(600px) rotateX(-38deg);
+			// 		margin: 0 33.3vw;
+			// 		#subTitleProj {
+			// 			font-size: 2.8vw;
 						
-					}
+			// 		}
 					
-					#coverClickArea:hover {
-						color: rgb(34,156,73);
-						cursor: pointer;
-						text-shadow: 0 0;
+			// 		#coverClickArea:hover {
+			// 			color: rgb(34,156,73);
+			// 			cursor: pointer;
+			// 			text-shadow: 0 0;
 						
-					}
-				}
+			// 		}
+			// 	}
 
-				p {
-					font-size: 0.5vw;
-				}
+			// 	p {
+			// 		font-size: 0.5vw;
+			// 	}
 				
-			}		
+			// }		
 		}
 
 		&#coursebox {

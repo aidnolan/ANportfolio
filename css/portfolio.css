@@ -143,7 +143,8 @@ i.fa-home {
 }
 .container.box#projectbox {
   background-image: url("../images/bgroundimg.jpg");
-  background-position: center;
+  background-repeat: repeat-y;
+  width: 100%;
   padding: 40px 0;
 }
 .container.box#projectbox h1 {
@@ -212,40 +213,6 @@ i.fa-home {
 }
 .container.box#projectbox .projectItem .projectButton:focus {
   outline: 0;
-}
-.container.box#projectbox .projectItem#firstItem {
-  order: -1;
-}
-.container.box#projectbox #projectcover {
-  color: white;
-  padding-top: 9.8vw;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 400;
-  background-image: url("../images/project-cover.jpg");
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  background-size: 100% 100%;
-  font-size: 5vw;
-  text-align: center;
-  text-shadow: 2px 2px rgba(10, 10, 255, 0.4);
-}
-.container.box#projectbox #projectcover #projectcovertext {
-  transform: perspective(600px) rotateX(-38deg);
-  margin: 0 33.3vw;
-}
-.container.box#projectbox #projectcover #projectcovertext #subTitleProj {
-  font-size: 2.8vw;
-}
-.container.box#projectbox #projectcover #projectcovertext #coverClickArea:hover {
-  color: #229c49;
-  cursor: pointer;
-  text-shadow: 0 0;
-}
-.container.box#projectbox #projectcover p {
-  font-size: 0.5vw;
 }
 .container.box#coursebox {
   font-family: "Raleway", helvetica, sans-serif;

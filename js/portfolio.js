@@ -34,12 +34,9 @@
 			$("#myForm").insertBefore($("#mySocial"));
 			$("#mySocial").css("padding","20px 0 20px 0");
 			$("#coursesUndertaken").css("font-size", "16px");
-			$("#courseDrop").css("display", "none");
 			$("#coursebox").css("padding", "10px 20px");
-			$(".carousel-capt").attr("id", "smallCapt");
 			$("#introbox #introPic").css("width", "45%");
 			$("#titlebox").css("background-attachment", "local");
-			$("#projectbox").css("background-attachment", "local");
 			$(".certificates").css("width", "250px");
 
 		} else {
@@ -48,11 +45,9 @@
 			$(".navbar-nav a").css("width", "100px");
 			$("#mySocial").insertBefore($("#myForm"));
 			$("#coursesUndertaken").css("font-size", "25px");
-			$("#courseDrop").css("display", "none");
 			$("#coursebox").css("padding", "30px 150px");
 			$("#introbox #introPic").css("width", "30%");
 			$("#titlebox").css("background-attachment", "fixed");
-			$("#projectbox").css("background-attachment", "fixed");
 			$(".certificates").css("width", "350px");
 		}
 	}
