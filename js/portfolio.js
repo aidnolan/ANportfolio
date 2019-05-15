@@ -39,6 +39,8 @@
 			$(".carousel-capt").attr("id", "smallCapt");
 			$("#introbox #introPic").css("width", "45%");
 			$("#titlebox").css("background-attachment", "local");
+			$("#projectbox").css("background-attachment", "local");
+			$(".certificates").css("width", "250px");
 
 		} else {
 			$(".profiles span").css("display", "inline");
@@ -50,6 +52,8 @@
 			$("#coursebox").css("padding", "30px 150px");
 			$("#introbox #introPic").css("width", "30%");
 			$("#titlebox").css("background-attachment", "fixed");
+			$("#projectbox").css("background-attachment", "fixed");
+			$(".certificates").css("width", "350px");
 		}
 	}
 	$(window).resize(widthView);
