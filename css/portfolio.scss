@@ -13,19 +13,24 @@ $alt-color-theme: royalblue;
           border-radius: $radius;
 }
 
-/*@mixin blur($value) {
-  -webkit-filter: blur($value);
-     -moz-filter: blur($value);
-       -o-filter: blur($value);
-          filter: blur($value);
-}*/
-
 @mixin background-size($background-size) {
   -webkit-background-size: $background-size;
      -moz-background-size: $background-size;
        -o-background-size: $background-size;
           background-size: $background-size;
 }	
+
+@media only screen and (max-width: 1024px){
+	#titlebox, #projectbox {
+		background-attachment: scroll;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	#coursesUndertaken {
+		font-size: 16px;
+	}	
+}
 
 nav.navbar {
 	margin-bottom: 0;
@@ -49,10 +54,10 @@ nav.navbar {
 
 	.navbar-nav a {
 		color: black;
-		// font-weight: bold;
+		font-weight: bold;
 		width: 100px;
 		text-align: center;
-		font-family: 'Righteous';
+		font-family: 'Raleway', sans-serif;
 		&:hover {
 			transition: 1s;
 			background-color: rgba(151,178,226, 0.78);;
@@ -78,8 +83,9 @@ i {
 .container {
 	font-family: 'Raleway', helvetica, sans-serif;
 	h1 {
-		font-family: 'Righteous','Raleway', helvetica, sans-serif;
+		font-family: 'Raleway', helvetica, sans-serif;
 		font-size: 30px;
+		font-weight: bold;
 	}
 	&#nav-adjust {
 		margin:0;
@@ -101,7 +107,7 @@ i {
 		&#titlebox {
 			box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4);
 			background-image: url("../images/macKeyboard.jpg");		
-			background-attachment: fixed;
+			// background-attachment: fixed;
 			background-position: center;
 			padding-top: 15vw;
 			height: 54vw;
@@ -112,7 +118,8 @@ i {
 	    	}
 	    	h1 {
 					font-size: 8vw;
-					font-family: 'Raleway', Helvetica, sans-serif
+					font-family: 'Raleway', helvetica, sans-serif;
+					font-weight: normal;
 	    	}
 	    	.row {
 	    		margin: 0;
@@ -137,11 +144,11 @@ i {
 
 			#introPara {
 				padding: 5px 10%;
-				text-align: center;
+				text-align: left;
 			}
 			
 			#introPic {
-				@include border-radius(20%);
+				@include border-radius(5%);
 				border: 3px solid $color-theme;			
 			}
 
@@ -174,11 +181,10 @@ i {
 
 		&#projectbox {
 			background-image: url("../images/bgroundimg.jpg");
-			background-repeat: repeat-y;
-			width: 100%;
 			padding: 40px 0;
 			h1 {
-				font-family: 'Righteous', 'Raleway', cursive;
+				font-family: 'Raleway', sans-serif;
+				font-weight: bold
 			}
 			.vertical-align {
 				display: flex;
@@ -187,11 +193,10 @@ i {
 				flex-wrap: wrap;
 			}
 			
-
 			.projectItem {
 				justify-content: space-between;
 				width: 300px;
-				background-color: rgba(150, 100, 200, 0.9);
+				background-color: rgba(23, 24, 97, 0.7);
 				margin: 15px;
 				padding: 20px;
 				color: white;
@@ -203,7 +208,7 @@ i {
 				@include border-radius(15px);
 
 				h3 {
-					font-family: 'Righteous', 'Raleway', cursive;
+					font-family: 'Raleway', sans-serif;
 				}
 
 				form {
@@ -230,7 +235,8 @@ i {
 					margin: 5px 5px;
 					@include border-radius(15px);
 					box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
-					color: white;
+					color:  rgb(23, 24, 97);
+					font-weight: bold;
 					border: none;
 					-webkit-appearance: none;
 					text-decoration: none;
@@ -238,59 +244,20 @@ i {
 						box-shadow: 1px 1px 1px rgba(0,0,0,0.8);
 					}
 					&:hover {
-						color: black;
+						color: white;
 					}
 					&:focus {
 						outline: 0;
 					}
 				}
 			}
-
-			// .projectItem#firstItem {
-			// 	order: -1
-			// }
-
-			// #projectcover {
-			// 	color: white;
-			// 	padding-top: 9.8vw;
-			// 	width: 100%;
-			// 	height: 100%;
-			// 	position: absolute;
-			// 	z-index: 400;
-			// 	background-image: url("../images/project-cover.jpg");
-			// 	@include background-size(100% 100%);
-			// 	font-size: 5vw;
-			// 	text-align: center;
-			// 	text-shadow: 2px 2px rgba(10,10,300, 0.4);
-
-			// 	#projectcovertext {
-			// 		transform: perspective(600px) rotateX(-38deg);
-			// 		margin: 0 33.3vw;
-			// 		#subTitleProj {
-			// 			font-size: 2.8vw;
-						
-			// 		}
-					
-			// 		#coverClickArea:hover {
-			// 			color: rgb(34,156,73);
-			// 			cursor: pointer;
-			// 			text-shadow: 0 0;
-						
-			// 		}
-			// 	}
-
-			// 	p {
-			// 		font-size: 0.5vw;
-			// 	}
-				
-			// }		
 		}
 
 		&#coursebox {
 			font-family: 'Raleway', helvetica, sans-serif;
 			font-size: 25px;
 			background-color: rgba(151,178,226, 1);
-			padding: 60px 150px;
+			padding: 60px 15px;
 			text-align: left;
 			
 			.dropdown-menu {
@@ -300,26 +267,6 @@ i {
 					white-space: normal;
 				}
 			}
-
-			// #courseDrop {
-			// 	display: none;
-			// 	text-align: center;
-			// 	margin: 30px 0;
-			// 	padding: 30px 0 0 0;
-			// 	li {
-			// 		padding: 0;
-			// 		a {
-			// 			width: 100%;
-			// 		}
-			// 	}
-			// 	a {
-			// 		color: black;
-			// 		text-decoration: none;
-			// 		&:hover {
-			// 			color: black;
-			// 		}
-			// 	}
-			// }
 			
 			#coursesUndertaken {
 				padding: 0px;
@@ -403,12 +350,12 @@ i {
 			}
 
 			.profiles {
-				padding: 20px 0 20px 0;
+				padding: 20px 0;
 				font-size: 18px;
-				text-align: right;
+				text-align: left;
 
 				img {
-					padding-right: 20px;
+					padding: 0 10px;
 					height: 48px;
 					width: 70px;
 				}

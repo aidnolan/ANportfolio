@@ -3,12 +3,16 @@
   padding: 0;
 }
 
-/*@mixin blur($value) {
-  -webkit-filter: blur($value);
-     -moz-filter: blur($value);
-       -o-filter: blur($value);
-          filter: blur($value);
-}*/
+@media only screen and (max-width: 1024px) {
+  #titlebox, #projectbox {
+    background-attachment: scroll;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #coursesUndertaken {
+    font-size: 16px;
+  }
+}
 nav.navbar {
   margin-bottom: 0;
   overflow: hidden;
@@ -34,9 +38,10 @@ nav.navbar .navbar-brand {
 }
 nav.navbar .navbar-nav a {
   color: black;
+  font-weight: bold;
   width: 100px;
   text-align: center;
-  font-family: "Righteous";
+  font-family: "Raleway", sans-serif;
 }
 nav.navbar .navbar-nav a:hover {
   transition: 1s;
@@ -62,8 +67,9 @@ i.fa-home {
   font-family: "Raleway", helvetica, sans-serif;
 }
 .container h1 {
-  font-family: "Righteous", "Raleway", helvetica, sans-serif;
+  font-family: "Raleway", helvetica, sans-serif;
   font-size: 30px;
+  font-weight: bold;
 }
 .container#nav-adjust {
   margin: 0;
@@ -85,7 +91,6 @@ i.fa-home {
 .container.box#titlebox {
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
   background-image: url("../images/macKeyboard.jpg");
-  background-attachment: fixed;
   background-position: center;
   padding-top: 15vw;
   height: 54vw;
@@ -97,7 +102,8 @@ i.fa-home {
 }
 .container.box#titlebox h1 {
   font-size: 8vw;
-  font-family: "Raleway", Helvetica, sans-serif;
+  font-family: "Raleway", helvetica, sans-serif;
+  font-weight: normal;
 }
 .container.box#titlebox .row {
   margin: 0;
@@ -114,13 +120,13 @@ i.fa-home {
 }
 .container.box#introbox #introPara {
   padding: 5px 10%;
-  text-align: center;
+  text-align: left;
 }
 .container.box#introbox #introPic {
-  -webkit-border-radius: 20%;
-  -moz-border-radius: 20%;
-  -ms-border-radius: 20%;
-  border-radius: 20%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  border-radius: 5%;
   border: 3px solid #97b2e2;
 }
 .container.box#introbox .col-xs-12:first-of-type {
@@ -143,12 +149,11 @@ i.fa-home {
 }
 .container.box#projectbox {
   background-image: url("../images/bgroundimg.jpg");
-  background-repeat: repeat-y;
-  width: 100%;
   padding: 40px 0;
 }
 .container.box#projectbox h1 {
-  font-family: "Righteous", "Raleway", cursive;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
 }
 .container.box#projectbox .vertical-align {
   display: flex;
@@ -159,7 +164,7 @@ i.fa-home {
 .container.box#projectbox .projectItem {
   justify-content: space-between;
   width: 300px;
-  background-color: rgba(150, 100, 200, 0.9);
+  background-color: rgba(23, 24, 97, 0.7);
   margin: 15px;
   padding: 20px;
   color: white;
@@ -174,7 +179,7 @@ i.fa-home {
   border-radius: 15px;
 }
 .container.box#projectbox .projectItem h3 {
-  font-family: "Righteous", "Raleway", cursive;
+  font-family: "Raleway", sans-serif;
 }
 .container.box#projectbox .projectItem form {
   display: inline;
@@ -200,7 +205,8 @@ i.fa-home {
   -ms-border-radius: 15px;
   border-radius: 15px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-  color: white;
+  color: #171861;
+  font-weight: bold;
   border: none;
   -webkit-appearance: none;
   text-decoration: none;
@@ -209,7 +215,7 @@ i.fa-home {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
 .container.box#projectbox .projectItem .projectButton:hover {
-  color: black;
+  color: white;
 }
 .container.box#projectbox .projectItem .projectButton:focus {
   outline: 0;
@@ -218,7 +224,7 @@ i.fa-home {
   font-family: "Raleway", helvetica, sans-serif;
   font-size: 25px;
   background-color: #97b2e2;
-  padding: 60px 150px;
+  padding: 60px 15px;
   text-align: left;
 }
 .container.box#coursebox .dropdown-menu {
@@ -293,12 +299,12 @@ i.fa-home {
   text-align: right;
 }
 .container.box#formbox .profiles {
-  padding: 20px 0 20px 0;
+  padding: 20px 0;
   font-size: 18px;
-  text-align: right;
+  text-align: left;
 }
 .container.box#formbox .profiles img {
-  padding-right: 20px;
+  padding: 0 10px;
   height: 48px;
   width: 70px;
 }
